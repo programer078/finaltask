@@ -1,0 +1,32 @@
+<ion-content [fullscreen]="true">
+  <br>
+  <ion-list class="meani">
+<ion-list class="icon" (click)="goBack()">
+  <ion-icon [name]="array.icon" class="arry"></ion-icon>
+</ion-list>
+<p class="ary2">{{array.dress}}</p>
+</ion-list>
+<ion-list class="fou">
+  <p class="ary3"><span>{{array.found}}</span> <br> <span>{{array.found1}}</span></p>
+  <ion-list class="fil">
+    <p class="ary4">{{array.fil}}</p>
+    <ion-icon [name]="array.icon1" class="ary5"></ion-icon>
+  </ion-list>
+</ion-list>
+<ion-list class="last">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" size-md="4" size-sm-6 *ngFor="let product of products"  (click)="next(product)" >
+        <ion-list class="pic1">
+          <ion-img [src]="product.img" alt=""></ion-img>
+        </ion-list>
+        <ion-list class="t1"> <span class="pmn">{{product.lin}}</span>
+          <br>
+          <a class="phj">{{product.dol}}</a>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-list>
+</ion-content>

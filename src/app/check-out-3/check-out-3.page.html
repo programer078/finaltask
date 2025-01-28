@@ -1,0 +1,42 @@
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <ion-list class="arow" (click)="goBack()">
+          <ion-icon name="chevron-back-outline" class="bacx"></ion-icon>
+      </ion-list>
+      </ion-col>
+      <ion-col size="8">
+        <p class="che">Check out</p>
+      </ion-col>
+      <ion-col size="2"></ion-col>
+    </ion-row>
+</ion-grid>
+<ion-list class="fir">
+  <ion-icon name="location" class="ico"></ion-icon>
+  &nbsp;
+  &nbsp;
+  <p class="dot">. . . . . . . .</p>
+  &nbsp;
+  &nbsp;
+  <ion-icon name="briefcase" class="bri"></ion-icon>
+  &nbsp;
+  &nbsp;
+  <p>. . . . . . . .</p>
+  &nbsp;
+  <ion-icon name="checkmark-circle" class="bri"></ion-icon>
+</ion-list>
+<p class="ord">Order Completed</p>
+<ion-list class="lock">
+  <img src="../../assets/icon/lock.png" alt="">
+</ion-list>
+<ion-list class="text">
+  <p class="thx">Thank you for your purchase. <br>
+    You can view your order in ‘My Orders’ <br> section.</p>
+</ion-list>
+<br>
+<ion-list class="pro" (click)="goto()">
+  <p class="con">Continue shooping</p>
+</ion-list>
+</ion-content>

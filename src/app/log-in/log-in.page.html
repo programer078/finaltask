@@ -1,0 +1,61 @@
+<ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingText="Pull to refresh" refreshingSpinner="crescent">
+    </ion-refresher-content>
+  </ion-refresher>
+  <br>
+  <p class="cr">Log into</p>
+  <p class="ac">your account</p>
+  <br>
+  <div class="as">
+    <ion-item class="it">
+      <ion-input placeholder="Email address" [(ngModel)]="login.email"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item class="it">
+      <ion-input 
+        placeholder="Password" 
+        [type]="passwordType"
+        [(ngModel)]="login.password"
+        (ngModelChange)="onPasswordChange()"
+        [disabled]="isLocked || permanentlyDisabled"> 
+        <ion-icon
+          [name]="passwordIcon"
+          slot="end"
+          (click)="togglePasswordVisibility()"
+          class="password-icon">
+        </ion-icon>
+      </ion-input>
+    </ion-item>
+    <div class="countdown" *ngIf="isLocked">{{ lockTimeout }}s</div>
+    <p class="for" (click)="god()">Forget Password?</p>
+    <br>
+  </div>
+  <br>
+  <br>
+  <div class="container">
+    <button 
+    class="sign-up-button"
+    [disabled]="!login.email || !isPasswordValid || isLocked || permanentlyDisabled" 
+    [ngClass]="{ 'disabled-btn': !login.email || !isPasswordValid || isLocked || permanentlyDisabled }"
+    (click)="submit()">
+    LOG IN  
+  </button>
+  </div>
+  <div class="sign1">
+    <p class="or">or log in with</p>
+  </div>
+  <br>
+  <div class="gog">
+    <div class="g">
+      <img src="../../assets/icon/gog.jpg" alt="" class="g">
+    </div>
+    <div class="f">
+      <img src="../../assets/icon/feacebok.jpg" alt="" class="f">
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <p class="do">Don't have an account? <span class="lo" (click)="dig()">Sign up</span></p>
+</ion-content>

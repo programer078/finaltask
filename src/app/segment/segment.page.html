@@ -1,0 +1,39 @@
+<div class="button-container">
+  <!-- Top Pink and Black Buttons -->
+  <div class="button-container2">
+    <!-- Pink Button 1 -->
+    <ion-button *ngIf="showPinkButton1" (click)="hideBottomBlackButton()"
+      [ngClass]="{'btn-pink': true, 'btn-full-width': false, 'margin-bottom': true}">
+      Pink Button 1
+    </ion-button>
+  
+    <!-- Black Button 1 -->
+    <ion-button *ngIf="showBlackButton1" (click)="hideBottomPinkButton()"
+      [ngClass]="{'btn-black': true, 'btn-full-width': false, 'margin-bottom': true}">
+      Black Button 1
+    </ion-button>
+  </div>
+  
+  <br>
+  <br>
+  
+  <!-- Bottom Pink and Black Buttons -->
+  <ion-button *ngIf="showPinkButton2"
+    [ngClass]="{'btn-pink': true, 'btn-full-width': true, 'margin-bottom': true}">
+    Pink Button 2
+  </ion-button>
+
+  <ion-button *ngIf="showBlackButton2"
+    [ngClass]="{'btn-black': true, 'btn-full-width': true, 'margin-bottom': true}">
+    Black Button 2
+  </ion-button>
+
+  <!-- Show All Button -->
+  <br>
+  <br>
+  <br>
+  <ion-button (click)="showAllButtons()"
+    [ngClass]="{'btn-all': true, 'btn-full-width': true, 'margin-top': true}">
+    Show All
+  </ion-button>
+</div>

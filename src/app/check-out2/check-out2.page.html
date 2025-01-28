@@ -1,0 +1,126 @@
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <ion-list class="arow" (click)="goBack()">
+          <ion-icon name="chevron-back-outline" class="cher"></ion-icon>
+      </ion-list>
+      </ion-col>
+      <ion-col size="8">
+        <p class="chek">Check out</p>
+      </ion-col>
+      <ion-col size="2"></ion-col>
+    </ion-row>
+</ion-grid>
+<ion-list class="fir">
+  <ion-icon name="location" class="loc"></ion-icon>
+  &nbsp;
+  &nbsp;
+  <p class="dot">. . . . . . . .</p>
+  &nbsp;
+  &nbsp;
+  <ion-icon name="briefcase" class="bri"></ion-icon>
+  &nbsp;
+  &nbsp;
+  <p>. . . . . . . .</p>
+  &nbsp;
+  <ion-icon name="checkmark-circle" class="cir"></ion-icon>
+</ion-list>
+<p class="ste">Step 1
+  <br>
+  <span class="pay">Payment</span>
+</p>
+<ion-list class="cho">
+  <ion-card class="cash">
+    <ion-list class="ic">
+    <ion-icon name="cash-outline" class="cas"></ion-icon>
+    </ion-list>
+    <ion-list class="ct">
+      <p>Cash</p>
+    </ion-list>
+  </ion-card>
+  <ion-card class="cardit">
+   
+      
+  </ion-card>
+  <ion-card class="ca2">
+    <ion-icon name="ellipsis-horizontal-outline" class="eli"></ion-icon>
+  </ion-card>
+</ion-list>
+<p class="as">Choose your card</p>
+<ion-list (click)="go1()">
+<p class="awe">Add new+</p>
+</ion-list>
+<!-- <ion-list (click)="go1()">
+</ion-list> -->
+<swiper-container [breakpoints]="
+{
+  '360':{
+    'slidesPerView': 1.1,
+    'spaceBetween': 10,
+  },
+  '760':{
+    'slidesPerView':3,
+    'spaceBetween': 10,
+  },
+  '1221':{
+    'slidesPerView': 4,
+    'spaceBetween': 10,
+  }
+}
+"
+[loop]="true"
+ class="ewq">
+      <swiper-slide *ngFor="let item of ind3">
+        <ion-list class="car">
+      <img [src]="item.cardit" alt="" class="cvbg">
+        </ion-list>
+           </swiper-slide>
+    </swiper-container>
+    <p class="ewq">or check out with</p>
+    <ion-grid class="ewq">
+      <ion-row>
+        <ion-col size="2" *ngFor="let item1 of ind2">
+          <ion-list class="cw1">
+            <img [src]="item1.sw1" alt="" class="tyu">
+          </ion-list>
+        </ion-col>
+        <ion-col size="2">
+          <ion-list class="cw5">
+            <img src="../../assets/icon/cw5.png" alt="" class="tyu">
+          </ion-list>
+        </ion-col>
+        <ion-col size="2"></ion-col>
+      </ion-row>
+    </ion-grid>
+    <br>
+    <br>
+    <ion-list class="last">
+      <ion-list class="t">
+        <p class="prfg">Product price</p>
+        <p class="pr">{{ totals.productPrice | currency }}</p>
+      </ion-list>
+      <hr>
+      <ion-list class="t">
+        <p class="prfg">Shipping</p>
+        <p class="pr">{{ totals.shipping | currency }}</p>
+      </ion-list>
+      <hr>
+      <ion-list class="t">
+        <p class="subt">Subtotal</p>
+        <p class="dox">{{ totals.subtotal | currency }}</p>
+      </ion-list>
+      <br>
+      <ion-checkbox  class="a" [(ngModel)]="isAgreed"></ion-checkbox>
+      <p class="ig">&nbsp;&nbsp;I agree to <span class="te">Terms and condition</span></p>
+      <br>
+      <br>
+      
+      <!-- Show the button only if the checkbox is checked -->
+      <ion-list class="pro" [ngClass]="{'active': isAgreed, 'inactive': !isAgreed}" (click)="goto()">
+        <p class="plc">Place my order</p>
+      </ion-list>
+      
+    </ion-list>
+</ion-content>

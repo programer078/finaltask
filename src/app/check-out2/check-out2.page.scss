@@ -1,0 +1,310 @@
+.arow{
+    height: 30px; width: 30px;
+    float: left;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0,0.329);
+    background-color: white;
+    }
+    .fir{
+        height: 40px; width: 70%;
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cho{
+        height: 100px; width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .cash{
+  height: 70px; width: 130px;
+  float: left;
+  
+}
+.cardit{
+height: 70px; width: 130px;
+margin-left: 20px;
+margin-inline: auto;
+background-image: url(../../assets/icon/caz.png);
+background-size: cover;
+background-position: center;
+}
+.ca2{
+height: 70px; width: 130px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 20px;
+float: right;
+  }
+.ic{
+  height: 30px; width: 50px;
+  display: flex;
+  margin-inline: auto;
+  margin-top: 10px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+.ct{
+  height: 20px; width: 70px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-inline: auto;
+}
+.cti{
+  height: 20px; width: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+  background: transparent;
+}
+.car{
+  height: 150px; width: 300px;
+  border-radius: 10px;
+}
+.cher{
+  height: 20px; 
+  width: 20px;
+}
+.chek{
+text-align: center;
+ margin-top: 25px;
+}
+.car1{
+  height: 150px; width: 300px;
+  border-radius: 10px;
+ 
+}
+.loc{
+color: black; height: 20px;
+ width: 20px;
+  font-weight: bolder;
+   margin-top: 5px;
+}
+.dot{
+  display: flex;
+   align-items: center;
+    font-size: large;
+     color: gray;
+}
+.cir{
+color: rgba(128, 128, 128, 0.486);
+ height: 20px; width: 20px;
+  margin-top: 5px;
+}
+.ste{
+font-size: 10px;
+ color: gray;
+  margin-left: 20px;
+}
+.cardx{
+height: 30px; 
+width: 50px; 
+color: white;
+}
+.as{
+color: black; margin-left: 20px; 
+font-weight: 550;
+ float: left;
+}
+.awe{
+  color: red; float: right;
+  margin-right: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.cvbg{
+background-size: cover;
+background-position: center;
+height: 150px; width: 300px;
+border-radius: 10px;
+}
+.ewq{
+margin-left: 20px;
+}
+.tyu{
+height: 20px; width: 30px;
+}
+.prfg{
+color: gray;
+ float: left;
+}
+.pr{
+  float: right;
+}
+.ig{
+  color: gray;
+}
+.plc{
+color: white;
+font-size: large;
+ cursor: pointer;
+}
+.dox{
+float: right;
+ font-weight: bolder;
+  font-size: large;
+}
+.subt{
+color: black;
+ float: left;
+}
+.pro {
+  opacity: 0.5;           /* Initial light appearance */
+  background-color: lightgray; /* Light background color */
+  transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transitions */
+  cursor: not-allowed; /* Show not-allowed cursor when inactive */
+}
+
+.active {
+  opacity: 1;            /* Full opacity when active */
+  background-color: darkgray; /* Darker background color */
+  cursor: pointer; /* Show pointer cursor when active */
+}
+
+.inactive {
+  pointer-events: none;  /* Prevent click events when inactive */
+}
+
+.itc{
+background-size: cover;
+background-position: center;
+height: 150px; width: 300px;
+}
+.brf{
+color: white;
+}
+.eli{
+color: black;
+ height: 80px;
+  width: 50px;
+}
+.pay{
+color: black; 
+font-size: x-large;
+ margin-top: 5px;
+}
+.cas{
+height: 30px; 
+width: 50px;
+}
+.bri{
+  color: black;
+   height: 20px;
+    width: 20px;
+     margin-top: 5px;
+}
+.cw1{
+  height: 40px; width: 50px;
+  border: solid 1px rgba(128, 128, 128, 0.452);
+  border-radius: 5px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.mix{
+height: 80px; width: 90%;
+border: solid 1px black;
+margin-left: 20px;
+display: flex;
+}
+.cw2{
+  height: 40px; width: 50px;
+  border: solid 1px rgba(128, 128, 128, 0.452);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cw3{
+  height: 40px; width: 50px;
+  border: solid 1px rgba(128, 128, 128, 0.452);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cw4{
+  height: 40px; width: 50px;
+  border: solid 1px rgba(128, 128, 128, 0.452);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cw5{
+  height: 40px; width: 50px;
+  border: solid 1px rgba(128, 128, 128, 0.452);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 255, 0.63);
+}
+.last{
+  height: 380px; width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.329);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.t{
+  height: 50px; width: 90%;
+  margin-inline: auto;
+  align-items: center;
+  
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc; /* or any color you prefer */
+  width: 90%;
+}
+.pro{
+  height: 60px; width: 90%;
+  margin-inline: auto;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.712);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+ion-checkbox {
+  --size: 25px;
+  --checkbox-background-checked: green;
+}
+
+ion-checkbox::part(container) {
+  border-radius: 2px;
+  border: 2px solid green;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.a{
+  float: left;
+}
+@media (min-width: 900px) and (max-width: 1600px) {
+  .a{
+  margin-left: 54px;    
+}
+}
+.te{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.te:hover{
+  text-decoration: none;
+}
+              

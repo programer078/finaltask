@@ -1,0 +1,71 @@
+.a{
+  height: 120px;
+  width: 110px;
+  float: left;
+}
+.b{
+  height: 120px;
+  width: 220px;
+  float: left;
+}
+.trx{
+  color: black;margin-left: 10px;
+  font-weight: bolder; float: left;
+  }
+  .counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    margin-top: 20px;
+    float: right;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background-color: white;
+  }
+  
+  .btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .value {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+  
+  .minus, .plus {
+    font-weight: bold;
+  }
+  
+  
+  .ac{
+    font-size: 10px;
+    color: gray;
+  }
+  .trxz{
+    color: black;margin-left: 10px;
+    font-weight: bolder; float: left;
+    font-size: 18px;
+    }
+  .ch{
+    height: 40px; width: 220px;
+
+    margin-top: 15px;
+  }
+  ion-checkbox {
+    --size: 25px;
+    --checkbox-background-checked: rgba(45, 104, 45, 0.596);
+  }
+  
+  ion-checkbox::part(container) {
+    border-radius: 6px;
+    border: 2px solid rgba(45, 104, 45, 0.596);
+    margin-left: 80px;
+    margin-top: 10px;
+  }

@@ -1,0 +1,115 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <ion-list class="arow"  (click)="goBack()">
+          <ion-icon name="chevron-back-outline" class="bacx"></ion-icon>
+      </ion-list>
+      </ion-col>
+      <ion-col size="8">
+        <p class="chex">Check out</p>
+      </ion-col>
+      <ion-col size="2"></ion-col>
+    </ion-row>
+</ion-grid>
+<ion-list class="fir">
+  <ion-icon name="location" class="far"></ion-icon>
+  &nbsp;
+  &nbsp;
+  <p class="p1">. . . . . . . .</p>
+  &nbsp;
+  &nbsp;
+  <ion-icon name="briefcase-outline" class="bri"></ion-icon>
+  &nbsp;
+  &nbsp;
+  <p>. . . . . . . .</p>
+  &nbsp;
+  <ion-icon name="checkmark-circle" class="che"></ion-icon>
+</ion-list>
+<p class="p2">Step 1
+  <br>
+  <span class="ship">Shipping</span>
+</p>
+<ion-card *ngFor="let item of cartItems">
+  <ion-list class="a">
+    <img [src]="item.map" alt="">
+    <ion-badge class="image-badge" color="danger">{{item.counter}}</ion-badge>
+  </ion-list>
+  <ion-list class="b">
+    <ion-list class="ch">
+      <p class="trx">{{item.tru}}</p>
+    </ion-list>
+    <a class="trxz">${{item.price}}
+      <br>
+      <a class="ac">Subtotal: ${{item.subtotal}}</a>
+      <br>
+      <p class="ac">{{item.size}} | Color: {{item.color}}</p>
+
+    </a>
+ 
+    
+    
+  </ion-list>
+</ion-card>
+<br>
+<ion-grid>
+  <ion-row>
+    <ion-col size="12" size-md="6">
+      <p class="shx">Shipping method</p>
+      
+      <ion-item lines="none" class="shipping-method-item">
+        <ion-checkbox slot="start" [(ngModel)]="selectedShipping.free" (ionChange)="updateShipping('free')"></ion-checkbox>
+        <ion-label>
+          <div class="shipping-method">
+            <div class="method-title"><span class="fre">Free</span>&nbsp;&nbsp;  <span class="del">Delivery to home</span></div> 
+            <div class="method-subtitle">Delivery from 3 to 7 business days</div>
+          </div>
+        </ion-label>
+      </ion-item>
+
+      <ion-item lines="none" class="shipping-method-item">
+        <ion-checkbox slot="start" [(ngModel)]="selectedShipping.standard" (ionChange)="updateShipping('standard')"></ion-checkbox>
+        <ion-label>
+          <div class="shipping-method">
+            <div class="method-title"><span class="fre">$9.90 </span>&nbsp;&nbsp;<span class="del">Delivery to home</span></div> 
+            <div class="method-subtitle">Delivery from 4 to 6 business days</div>
+          </div>
+        </ion-label>
+      </ion-item>
+
+      <ion-item lines="none" class="shipping-method-item">
+        <ion-checkbox slot="start" [(ngModel)]="selectedShipping.fast" (ionChange)="updateShipping('fast')"></ion-checkbox>
+        <ion-label>
+          <div class="shipping-method">
+            <div class="method-title"><span class="fre">$19.90</span>&nbsp;&nbsp; <span class="del">Fast Delivery</span></div>
+            <div class="method-subtitle">Delivery from 2 to 3 business days</div>
+          </div>
+        </ion-label>
+      </ion-item>
+
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+   <ion-list class="last">
+          <ion-list class="t">
+            <p class="prfg">Product price</p>
+            <p class="pr">{{totals.productPrice | currency}}</p>
+          </ion-list>
+          <hr>
+          <ion-list class="t">
+            <p class="prfg">Shipping</p>
+            <p class="pr">{{totals.shipping | currency}}</p>
+          </ion-list>
+          <hr>
+          <ion-list class="t">
+            <p class="subt">Subtotal</p>
+            <p class="dox">{{totals.subtotal | currency}}</p>
+          </ion-list>
+          <br>
+          <ion-list class="pro" (click)="goto()">
+            <p class="con">Continue to payment</p>
+          </ion-list>
+        </ion-list>
+</ion-content>

@@ -1,0 +1,120 @@
+<ion-content [fullscreen]="true">
+  <ion-list class="first"   >
+     <ion-list class="arow" slot="start"   (click)="goBack()"> 
+         <ion-icon name="chevron-back-outline" class="bacx"></ion-icon>
+     </ion-list>
+     <ion-list class="hert">
+          <ion-icon
+    [name]="isFavorite ? 'heart' : 'heart-outline'"
+    [class.heart-red]="isFavorite"
+    (click)="toggleFavorite()"
+    class="heartx"
+  ></ion-icon>
+     </ion-list>
+ 
+   <swiper-container
+    [pagination]="true" [loop]="true">
+     <swiper-slide>
+         <ion-list class="p1">
+             <img src=" {{user.img}}" alt="" class="mapx" >
+           </ion-list>
+     </swiper-slide>
+   </swiper-container>
+  </ion-list>
+ <ion-list class="last">
+     <br>
+     <ion-list class="sp">
+         <p class="setx">{{user.lin}}
+             <br>
+             <img src="../../assets/icon/star.png" alt="" class="starx"><a class="egx">{{user.tex}}</a>
+         </p>
+         <p class="prx">{{user.dol}}</p>
+     </ion-list>
+     <hr>
+     <ion-list class="second">
+         <ion-list class="col">
+         <p class="cox">Color</p>
+ 
+         </ion-list>
+         <ion-list class="siz">
+             <p class="cox">Size</p>
+         </ion-list>
+         <br>
+         <br>
+        <ion-list class="color">
+     <ion-list
+       class="bro"
+       [ngClass]="{'selected': isColorSelected('Brown')}"
+       (click)="selectColor('Brown')"
+     ></ion-list>
+     <ion-list
+       class="bla"
+       [ngClass]="{'selected': isColorSelected('Black')}"
+       (click)="selectColor('Black')"
+     ></ion-list>
+     <ion-list
+       class="red"
+       [ngClass]="{'selected': isColorSelected('Red')}"
+       (click)="selectColor('Red')"
+     ></ion-list>
+   </ion-list>
+ 
+   <ion-list class="size">
+     <ion-list
+       class="s"
+       [ngClass]="{'selected': isSizeSelected('S')}"
+       (click)="selectSize('S')"
+     >
+       <p class="cox">S</p>
+     </ion-list>
+     <ion-list
+       class="m"
+       [ngClass]="{'selected': isSizeSelected('M')}"
+       (click)="selectSize('M')"
+     >
+       <p class="cox">M</p>
+     </ion-list>
+     <ion-list
+       class="l"
+       [ngClass]="{'selected': isSizeSelected('L')}"
+       (click)="selectSize('L')"
+     >
+       <p style="color: white;">L</p>
+     </ion-list>
+   </ion-list>
+     </ion-list>
+ <hr>
+ <ion-list class="dis">
+     <ion-list class="te">
+         <p>Discription</p>
+ 
+     </ion-list>
+     <ion-list class="ar">
+         <ion-icon name="chevron-forward-outline" class="fox"></ion-icon>
+     </ion-list>
+ </ion-list>
+ <hr>
+ <ion-list class="dis">
+     <ion-list class="te">
+         <p>Reviews</p>
+ 
+     </ion-list>
+     <ion-list class="ar">
+         <ion-icon name="chevron-forward-outline" class="fox"></ion-icon>
+     </ion-list>
+ </ion-list>
+ <hr>
+ <ion-foter class="aa">
+     <ion-tab-bar slot="bottom" class="bottom" >
+         <ion-icon name="bag-remove-outline" class="cvx"></ion-icon>
+         <ion-badge color="danger" *ngIf="cartItems.length > 0" class="badge">
+          {{ cartItems.length }}
+        </ion-badge>
+       &nbsp;
+       &nbsp;
+         <p class="addx" (click)="goto()">Add To Cart</p>
+     </ion-tab-bar>
+ </ion-foter>
+ </ion-list>
+ 
+ </ion-content>

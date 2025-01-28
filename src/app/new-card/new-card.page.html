@@ -1,0 +1,80 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <ion-list class="arow" (click)="goBack()">
+          <ion-icon name="chevron-back-outline" class="bacx"></ion-icon>
+      </ion-list>
+      </ion-col>
+      <ion-col size="8">
+        <p class="payx">Payment</p>
+      </ion-col>
+      <ion-col size="2"></ion-col>
+    </ion-row>
+</ion-grid>
+<p class="chox">Choose your card</p>
+<ion-list (click)="goto()">
+<p class="addx">Add new+</p>
+</ion-list>
+<swiper-container [breakpoints]="
+{
+  '360':{
+    'slidesPerView': 1.2,
+    'spaceBetween': 10,
+  },
+  '760':{
+    'slidesPerView':3,
+    'spaceBetween': 10,
+  },
+  '1221':{
+    'slidesPerView': 4,
+    'spaceBetween': 10,
+  }
+}
+"
+[loop]="true"
+ style="margin-left: 20px;">
+      <swiper-slide *ngFor="let item of indm">
+    <ion-list class="car">
+      <img [src]="item.img" alt="">
+    </ion-list>
+      </swiper-slide>
+    </swiper-container>
+    <br>
+    <p class="orx">or check out with</p>
+    <br>
+    <br>
+    <ion-list class="listx">
+    <ion-grid class="orx">
+      <ion-row>
+        <ion-col size="2">
+          <ion-list class="cw1">
+            <img src="../../assets/icon/sw1.png" alt="" class="swix">
+          </ion-list>
+        </ion-col>
+        <ion-col size="2">
+    <ion-list class="cw2">
+      <img src="../../assets/icon/sw2.png" alt="" >
+    </ion-list>
+        </ion-col>
+        <ion-col size="2">
+    <ion-list class="cw3">
+      <img src="../../assets/icon/cw3.png" alt="">
+    </ion-list>
+        </ion-col>
+        <ion-col size="2">
+    <ion-list class="cw4">
+      <img src="../../assets/icon/cw4.png" alt="">
+    </ion-list>
+        </ion-col>
+        <ion-col size="2">
+    <ion-list class="cw5" >
+      <img (click)="goto()" src="../../assets/icon/cw5.png" alt="">
+    </ion-list>
+        </ion-col>
+        <ion-col size="2"></ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+</ion-content>
+

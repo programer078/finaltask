@@ -1,0 +1,50 @@
+<ion-content [fullscreen]="true">
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <ion-list class="arow"  (click)="goBack()">
+          <ion-icon name="chevron-back-outline" class="c1"></ion-icon>
+      </ion-list>
+      </ion-col>
+      <ion-col size="8" >
+        <p class="p1">Add new card</p>
+      </ion-col>
+      <ion-col size="2"></ion-col>
+    </ion-row>
+</ion-grid>
+<ion-list class="yelx">
+  <img src="../../assets/icon/yel.png" alt="">
+</ion-list>
+
+<p class="card-txt">Cardholder Name</p>
+<ion-list class="input-container">
+<input class="inx">
+</ion-list>
+<p class="card-txt" >Card Number</p>
+<ion-list class="input-container">
+<input class="inx">
+</ion-list>
+
+
+<ion-grid>
+<ion-row>
+  <ion-col size="5">
+    <p class="card-txt1">Expires</p>
+<ion-list class="input-container">
+<input class="inx">
+</ion-list>
+  </ion-col>
+  <ion-col size="5">
+    <p class="card-txt1">CVV</p>
+<ion-list class="input-container">
+<input class="inx">
+</ion-list>
+  </ion-col>
+</ion-row>
+</ion-grid>
+
+<ion-list class="jjx">
+<ion-button shape="round" class="btn-add" (click)="goto()">Add Card</ion-button>
+</ion-list>
+</ion-content>

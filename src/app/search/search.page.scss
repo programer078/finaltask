@@ -1,0 +1,433 @@
+.icon{
+    height: 40px; width: 40px;
+    margin-left: 2%;
+    margin-top: 5px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.329);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.not-found-message {
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+  padding: 20px;
+}
+
+.mean{
+    height: 70px; width: 85%;
+    margin-inline: auto;
+}
+.img{
+  height: 200px;
+}
+.price-range {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px; /* Adds space between slider and price values */
+}
+
+.price-values {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px; /* Space between range sliders and price display */
+  font-size: 16px;  /* Adjust font size of price values if needed */
+}
+
+ion-modal {
+  --width: 100%;
+  --height: 100%; /* Half screen height */
+  left: 60px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 4px 0px 6px black;
+  
+}
+ion-modal {
+  --background: white; /* Ensure the modal content is not transparent */
+  opacity: 1; /* Full opacity */
+}
+
+.price-range {
+  width: 300px;
+  margin: 20px;
+}
+.f1{
+color: black; 
+font-size: 20px;
+}
+label {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+input[type="range"] {
+  width: 100%;
+  margin: 0;
+}
+
+.price-values {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 250px;
+}
+
+.price-values span {
+  font-size: 14px;
+  color: #666;
+}
+.price-range {
+  width: 300px;
+  margin: 20px;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.filter-panel {
+  width: 300px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-section {
+  margin-bottom: 15px;
+}
+
+.filter-section label {
+  width: 90%;
+  margin-left: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.range-slider input {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.color-options {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin-left: 10px;
+}
+.discount-button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+.discount-button2{
+  background-color: white;
+  border-radius: 30px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 50px; width: 40%;
+  display: inline-block;
+  cursor: pointer;
+}
+.re{
+  color: black;
+  text-align: center;
+}
+.ap{
+  color: white;
+  text-align: center;
+}
+.discount-button3{
+  background-color: black;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 10px;
+  height: 50px; width: 40%;
+  display: inline-block;
+  cursor: pointer;
+}
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-inline: auto;
+  width: 90%;
+  height: 90px;
+}
+.co{
+ height: 20px; width: 20px;
+}
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  white-space: nowrap;
+  flex: 1 1 45%; /* Allows two tags per row */
+  box-sizing: border-box;
+}
+
+.tag .close-btn {
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.discount-button:hover {
+  background-color: #f0f0f0;
+}
+.close-button {
+  float: right;
+  font-size: 14px;
+  cursor: pointer;
+}
+.lastz{
+  height: 80px; width: 90%;
+  margin-inline: auto;
+}
+.color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  cursor: pointer;
+}
+
+.star-rating {
+  display: flex;
+  width: 90%;
+  margin-left: 18px;
+  justify-content: space-between;
+}
+
+.star {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.star.selected {
+  background-color: #000;
+  color: #fff;
+}
+
+#category {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.discount-options {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.discount {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 0;
+}
+
+.price-values {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.price-values span {
+  font-size: 14px;
+  color: #666;
+}
+
+
+ion-modal ion-toolbar {
+  --background: white;
+  --color: white;
+}
+
+.search{
+    height: 50px; width: 75%;
+    float: left;
+    border: solid 1px rgba(128, 128, 128, 0.493);
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.075);
+    display: flex;
+    align-items: center;
+
+}
+.icon2{
+    height: 50px; width: 20%;
+    float: right;
+    border-radius: 15px;
+    border: solid 1px rgba(128, 128, 128, 0.493);
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.075);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rec{
+    height: 50px; width: 83%;
+    margin-inline: auto;
+}
+.s1{
+    height: 60px; width: 83%;
+    margin-inline: auto;
+}
+.sun{
+    height: 45px; width: 60%;
+    background-color: rgba(128, 128, 128, 0.075);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    float: left;
+}
+.icon4{
+    height: 45px; width: 35%;
+    background-color: rgba(128, 128, 128, 0.075);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+.hodi{
+    height: 60px; width: 83%;
+    margin-inline: auto;
+}
+.meani{
+    height: 60px; width: 83%;
+    margin-inline: auto;
+}
+.icon5{
+    height: 45px; width: 45%;
+    background-color: rgba(128, 128, 128, 0.075);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.fe{
+    height: 60px; width: 83%;
+    margin-inline: auto;
+  }
+  .p8{
+    font-size: x-large; font-weight: bolder; float: left;
+  }
+  .p9{
+    color: gray; float: right;
+    margin-top: 30px;
+  }
+  .last{
+    height: 260px; width: 83%;
+    margin-inline: auto;
+  }
+  .p1{
+    height: 200px; width: 130px;
+    border-radius: 10px;
+   
+  }
+  .p2{
+    height: 200px; width: 130px;
+    border-radius: 10px;
+  }
+  .p1x{
+    color: gray;
+    margin-left: 10px;
+  }
+  .dolx{
+  font-weight: bolder; 
+  color: black;
+  margin-top: 15px;
+  }
+  .nax{
+  font-family: 'Gill Sans', 
+  'Gill Sans MT', Calibri, 
+  'Trebuchet MS', sans-serif;
+  }
+  .p2x{
+  color: gray; 
+  float: left;
+  }
+  .p5x{
+  color: gray; 
+  margin-left: 25px;
+  }
+  .p3x{
+  color: gray; 
+  margin-left: 30px;
+  }
+  .p4x{
+  color: gray; 
+  margin-left: 10px;
+  }
+  .trx{
+  height: 20px; width: 20px;
+   color: gray; 
+   float: right;
+   margin-top: 15px;
+  }
+  .colx{
+  height: 30px; 
+  width: 30px; 
+  color: gray; 
+  margin-left: 20px;
+  }
+  .p3{
+    height: 200px; width: 130px;
+    border-radius: 10px;
+  }
+  .opx{
+  color: gray; 
+  height: 30px; 
+  width: 30px;
+  }
+  .seox{
+  height: 30px;
+   width: 30px;
+    color: gray; 
+    margin-left: 10px;
+  }

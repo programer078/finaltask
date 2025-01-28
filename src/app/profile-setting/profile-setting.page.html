@@ -1,0 +1,64 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <ion-list class="arow"  (click)="goBack()">
+          <ion-icon name="chevron-back-outline" class="c1"></ion-icon>
+      </ion-list>
+      </ion-col>
+      <ion-col size="8">
+        <p class="p1">Profile setting</p>
+      </ion-col>
+      <ion-col size="2"></ion-col>
+    </ion-row>
+</ion-grid>
+<br>
+<ion-list class="pc">
+ 
+  <img src="../../assets/icon/avatar.png" alt="" class="chx">
+  <ion-list class="cam">
+    <ion-icon name="camera-outline" size="small" color="light"></ion-icon>
+  
+    </ion-list>
+
+</ion-list>
+<br>
+<ion-list class="input">
+
+ 
+    <ion-row>
+      <ion-col size="7">
+        <ion-item class="itbx" >
+          <ion-input  label="First name" label-placement="floating"  placeholder="First name" ></ion-input>     
+         </ion-item>
+      </ion-col>
+      <ion-col size="5">
+        <ion-item class="itbx" >
+          <ion-input  label="Last name" label-placement="floating"  placeholder="First name"></ion-input>     
+         </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="itbx" >
+          <ion-input  label="Email" label-placement="floating"  placeholder="First name"></ion-input>     
+         </ion-item>
+      </ion-col>
+      <ion-col size="4">
+        <ion-item class="itbx" >
+          <ion-input  label="Gender" label-placement="floating"  placeholder="First name"></ion-input>     
+         </ion-item>
+      </ion-col>
+      <ion-col size="8">
+        <ion-item class="itbx" >
+          <ion-input  label="Phone" label-placement="floating"  placeholder="First name"></ion-input>     
+         </ion-item>
+      </ion-col>
+    </ion-row>
+</ion-list>
+<br>
+<br>
+<br>
+<br>
+<ion-list class="save" (click)="goto()">
+  <p class="asx">Save change</p>
+</ion-list>
+</ion-content>

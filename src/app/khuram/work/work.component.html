@@ -1,0 +1,20 @@
+<ion-footer class="aa">  
+  <ion-tab-bar slot="bottom" class="bottom">
+    <ion-tab-button tab="home">
+   <ion-icon name="home-outline" class="homei"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="radio" (click)="goto()">
+      <ion-icon name="search-outline"></ion-icon>
+    </ion-tab-button>
+   <ion-tab-button tab="radio" (click)="go1()" class="icon-with-badge">
+      <ion-icon name="bag-remove-outline" class="bg"></ion-icon>
+      <ion-badge color="danger" *ngIf="cartItems.length > 0" class="badge">
+        {{ cartItems.length }}
+      </ion-badge>
+    </ion-tab-button>
+    <ion-tab-button tab="search" (click)="go2()">
+      <ion-icon name="person-circle-outline" class="per">
+      </ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-footer>

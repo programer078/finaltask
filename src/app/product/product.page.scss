@@ -1,0 +1,247 @@
+.first{
+    height: 400px; width: 100%;
+    background-color: rgba(255, 192, 203, 0.082);
+    align-items: center;
+}
+.cir{
+    height: 200px; width: 200px;
+    border-radius: 100px;
+    margin-inline: auto;
+  background-image: url(../../assets/icon/circl.png);
+}
+.arow{
+height: 30px; width: 30px;
+// float: left;
+border-radius: 15px;
+margin-left: 20px;
+margin-top: 20px;
+justify-content: center;
+display: flex;
+align-items: center;
+}
+/* Add this to your product.page.scss */
+
+.selected {
+  border: 4px solid green; /* Change this to your preferred highlight style */
+  background-color: #f0f0f0; /* Optional: change background color for selected items */
+}
+
+.hert{
+    height: 30px; width: 30px;
+    float: right;
+    border-radius: 15px;
+    margin-top: -25px;
+    margin-right: 20px;
+justify-content: center;
+display: flex;
+align-items: center;
+}
+.p1{
+    height: 300px; width: 60%;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  background: transparent;
+}
+.last{
+    height: 400px; width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.329);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.sp{
+    height: 75px; width: 84%;
+    margin-inline: auto;
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc; /* or any color you prefer */
+  width: 84%;
+}
+.second{
+  height: 100px; width: 84%;
+  margin-inline: auto;
+  
+}
+.col{
+  height: 30px; width: 70px;
+
+  display: flex;
+  align-items: center;
+  display: flex;
+  float: left;
+}
+.siz{
+  height: 30px; width: 100px;
+
+  display: flex;
+  align-items: center;
+  display: flex;
+  float: right;
+}
+.color{
+  height: 70px; width: 130px;
+  display: flex;
+  float: left;
+}
+.size{
+  height: 50px; width: 100px;
+  display: flex;
+  align-items: center;
+  float: right;
+}
+.bro{
+  height: 40px; width: 40px;
+  // border: solid 5px chocolate;
+  border-radius: 20px;
+  background-color: chocolate;
+  // box-shadow: 0 4px 8px rgba(0, 0, 0,0.329);
+  margin-left: 5px;
+}
+.bla{
+  height: 30px; width: 30px;
+  border-radius: 15px;
+  background-color: black;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.red{
+  height: 30px; width: 30px;
+  border-radius: 15px;
+  background-color: rgba(255, 0, 0, 0.568);
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.s{
+  height: 30px; width: 30px;
+  border-radius: 15px;
+background-color: #ccc;
+}
+.s{
+  height: 30px; width: 30px;
+  border-radius: 15px;
+background-color: #ccc;
+justify-content: center;
+align-items: center;
+display: flex;
+}.m{
+  height: 30px; width: 30px;
+  border-radius: 15px;
+background-color: #ccc;
+margin-left: 5px;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+.bacx{
+height: 20px; width: 20px;
+}
+.heartx{
+height: 20px; width:
+ 20px; 
+}
+.heart-red {
+  color: red;
+}
+
+.mapx{
+height: 300px; width: 300px;
+}
+.fox{
+height: 20px; width: 20px;
+}
+.cox{
+  color: gray;
+}
+.starx{
+margin-right: 5px;
+float: left;
+}
+.prx{
+font-size: large; 
+font-weight: bolder;
+float: right;
+}
+.egx{
+color: black;
+font-size: small;
+float: left;
+margin-top: 8px;
+}
+.setx{
+font-size: large;float: left;
+}
+.l{
+  height: 30px; width: 30px;
+  border-radius: 15px;
+background-color: black;
+margin-left: 5px;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+.dis{
+  height: 35px; width: 84%;
+  margin-inline: auto;
+  
+}
+.te{
+  height: 30px; width: 100px;
+  display: flex;
+  align-items: center;
+  float: left;
+  
+}
+.ar{
+  height: 30px; width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+}
+.aa{
+  contain: none;
+}
+.a{
+  --border-color:white;
+  --background: black;
+  
+}
+.item-name{
+  height: 30px; 
+  width: 100%; 
+  margin-top: 10px;
+   display: flex; 
+  justify-content: space-between;
+}
+.dc{
+  height: 80px; width: 70px;
+  justify-content: center;
+  align-items: center;
+  float: right;
+}
+.cvx{
+height: 20px; 
+width: 20px; 
+color: white;
+}
+.addx{
+color: white;
+font-size: larger;
+}
+.bottom{
+  width: 100%;
+  height: 60px;
+ --background: black;
+ color: white;
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+  
+  
+}
+swiper-container::part(bullet-active){
+  background-color: black;
+}

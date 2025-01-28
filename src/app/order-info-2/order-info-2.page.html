@@ -1,0 +1,70 @@
+<ion-content [fullscreen]="true">
+  <ion-list class="r">
+     <ion-grid>
+         <ion-row>
+           <ion-col size="2">
+             <ion-list class="arow" (click)="goBack()">
+               <ion-icon name="chevron-back-outline" class="c1"></ion-icon>
+           </ion-list>
+           </ion-col>
+           <ion-col size="8">
+             <p class="p1">Order #1524</p>
+           </ion-col>
+           <ion-col size="2"></ion-col>
+         </ion-row>
+     </ion-grid>
+  <ion-list class="first">
+     <br>
+     <p  class="p2">Your order is on the way <br>
+         <span class="s1">Click here to track your order</span>
+     </p>
+     <ion-list class="ord">
+         <img src="../../assets/icon/car.png" alt="">
+     </ion-list>
+  </ion-list>
+  <br>
+   <ion-list class="fist2">
+     <ion-list>
+     <p class="p3">Order number</p>
+     <p class="p4">#1524</p>
+ </ion-list>
+ <ion-list>
+     <p class="p5">Tracking Number</p>
+     <p class="p6">  IK287368838</p> 
+ </ion-list>
+ <p class="p7">Delivery address</p>
+ <p class="p8"> Software Park</p>
+  </ion-list>
+     <ion-list class="receipt-container">
+       <ion-list class="receipt-item">
+         <span>Sportwear Set</span>
+         <span>x1</span>
+         <span>$80.00</span>
+       </ion-list>
+       <ion-list class="receipt-item">
+         <span>Cotton T-shirt</span>
+         <span>x1</span>
+         <span>$30.00</span>
+       </ion-list>
+       <ion-list class="receipt-total">
+         <ion-list class="receipt-subtotal">
+           <span>Sub Total</span>
+           <span>$110.00</span>
+         </ion-list>
+         <ion-list class="receipt-shipping">
+           <span>Shipping</span>
+           <span>$0.00</span>
+         </ion-list>
+         <hr>
+         <ion-list class="receipt-final-total">
+           <span>Total</span>
+           <span>$110.00</span>
+         </ion-list>
+     </ion-list>
+ </ion-list>
+ <ion-list class="sub" (click)="goto()">
+  <p class="con">Continue shopping</p>
+</ion-list>
+ </ion-list>
+ </ion-content>
+ 

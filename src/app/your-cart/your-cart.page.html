@@ -1,0 +1,82 @@
+<ion-content [fullscreen]="true">
+
+  <!-- Main Grid -->
+    <!-- Header Row -->
+        <ion-grid>
+          <ion-row>
+            <!-- Back Button -->
+            <ion-col size="2">
+              <ion-list class="arow" (click)="goBack()">
+                <ion-icon name="chevron-back-outline" class="bacx"></ion-icon>
+              </ion-list>
+            </ion-col>
+            <!-- Cart Title -->
+            <ion-col size="9">
+              <p class="your">Your Cart</p>
+            </ion-col>
+            <ion-col size="1"></ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <ion-card *ngFor="let item of indw">
+          <ion-list class="a">
+            <img [src]="item.map" alt="">
+          </ion-list>
+          <ion-list class="b">
+            <ion-list class="ch">
+              <p class="trx">{{item.tru}}</p>
+              <ion-icon name="trash-outline" slot="end"  class="delete-icon" (click)="deleteItem(item)"></ion-icon>
+            </ion-list>
+            <a class="trxz">${{item.price}}
+              <br>
+              <a class="ac">Subtotal: ${{item.subtotal}}</a>
+              <br>
+              <p class="ac">{{item.size}} | Color: {{item.color}}</p>
+      
+            </a>
+            <div class="counter">
+              <p class="btn minus" (click)="decrement(item)">-</p>
+              <span class="value">{{item.counter}}</span>
+              <p class="btn plus" (click)="increment(item)">+</p>
+            </div>
+            
+            
+          </ion-list>
+        </ion-card>
+        <ion-list class="last">
+          <ion-list class="t">
+            <p class="prfg">Product price</p>
+            <p class="pr">{{totals.productPrice | currency}}</p>
+          </ion-list>
+          <hr>
+          <ion-list class="t">
+            <p class="prfg">Shipping</p>
+            <p class="pr">{{totals.shipping | currency}}</p>
+          </ion-list>
+          <hr>
+          <ion-list class="t">
+            <p class="subt">Subtotal</p>
+            <p class="dox">{{totals.subtotal | currency}}</p>
+          </ion-list>
+          <br>
+          <ion-list class="pro" (click)="goto()">
+            <p>Proceed to checkout</p>
+          </ion-list>
+        </ion-list>
+        <!-- <ion-list class="last">
+          <ion-item>
+            <ion-label>Product Price</ion-label>
+            <ion-note slot="end">{{totals.productPrice | currency}}</ion-note>
+          </ion-item>
+          <ion-item>
+            <ion-label>Shipping</ion-label>
+            <ion-note slot="end">{{totals.shipping | currency}}</ion-note>
+          </ion-item>
+          <ion-item>
+            <ion-label>Subtotal</ion-label>
+            <ion-note slot="end">{{totals.subtotal | currency}}</ion-note>
+          </ion-item>
+          <br>
+         
+        </ion-list> -->
+</ion-content>

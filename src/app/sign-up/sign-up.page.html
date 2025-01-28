@@ -1,0 +1,42 @@
+<ion-content [fullscreen]="true">
+  
+  <br>
+    <p class="cr">Creat</p>
+    <p class="ac">your account</p>
+  <div class="as">
+        <ion-item class="itx">
+    <ion-input placeholder="Enter your name"></ion-input>
+  </ion-item>
+  <br>
+  <ion-item class="itx">
+    <ion-input placeholder="Email addres"></ion-input>
+  </ion-item>
+  <br>
+  <ion-item class="itx">
+    <ion-input placeholder="Password" type="password" ></ion-input>
+  </ion-item>
+  <br>
+  <ion-item class="itx">
+    <ion-input placeholder=" Confirm password" type="password"></ion-input>
+  </ion-item>
+  </div> 
+  <br>
+  <br>
+  <div class="container">
+    <button class="sign-up-button"(click)="goto()">SIGN UP</button>
+</div>
+<div class="sign1">
+  <p class="or">or sign up with</p>
+</div>
+<br>
+<div class="gog">
+  <div class="g">
+    <img src="../../assets/icon/gog.jpg" alt="" class="g">
+  </div>
+  <div class="f">
+    <img src="../../assets/icon/feacebok.jpg" alt="" class="f">
+  </div>
+</div>
+<br>
+<p class="al">Already have account? <span class="lo" (click)="goto()">Login</span></p>
+</ion-content>

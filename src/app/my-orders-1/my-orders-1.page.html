@@ -1,0 +1,187 @@
+<ion-content [fullscreen]="true">
+  <!-- ... (aapka existing menu code) ... -->
+
+  <div class="ion-page" id="main-content">
+    <ion-list class="lis">
+      <ion-toolbar class="tol">
+        <ion-list slot="start" class="icon" (click)="goBack()">
+          <ion-icon name="chevron-back-outline" class="bacx"></ion-icon>
+        </ion-list>
+        <p class="mo">My Orders</p>
+        <ion-buttons slot="end">
+          <ion-button>
+            <ion-icon name="notifications-outline" class="not"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-list>
+  </div>
+
+  <ion-list class="se">
+    <ion-segment [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event)" class="segment-1">
+      <ion-segment-button value="home">
+        Pending
+      </ion-segment-button>
+      <ion-segment-button value="profile">
+        Dlivered
+      </ion-segment-button>
+      <ion-segment-button value="settings">
+        Cancelled
+      </ion-segment-button>
+    </ion-segment>
+  </ion-list>
+
+  <!-- Pending Segment -->
+  <div *ngIf="selectedSegment === 'home'">
+    <ion-card *ngFor="let item of cartItems; let i = index">
+      <!-- Existing Card Content -->
+      <ion-list class="a1">
+        <img [src]="item.map" alt="">
+        <ion-badge class="image-badge" color="danger">{{item.counter}}</ion-badge>
+      </ion-list>
+      <ion-list class="b">
+        <ion-list class="ch">
+          <p class="trx">{{item.tru}}</p>
+        </ion-list>
+        <a class="trxz">${{item.price}}
+          <br>
+          <a class="ac">Subtotal: ${{item.subtotal}}</a>
+          <br>
+          <p class="ac">{{item.size}} | Color: {{item.color}}</p>
+        </a>
+        <ion-list class="zxc">
+          <ion-list class="dea" (click)="moveToDelivered(item, i)">Delivered</ion-list>
+          <ion-list class="can" (click)="moveToCancelled(item, i)" >Canceled</ion-list>
+        </ion-list>
+        <!-- <ion-button color="success" (click)="moveToDelivered(item, i)" class="de">Delivered</ion-button>
+        <ion-button color="danger" (click)="moveToCancelled(item, i)" class="can">Canceled</ion-button> -->
+      </ion-list>
+      <!-- <ion-button color="success" (click)="moveToDelivered(item, i)" class="de">Delivered</ion-button>
+      <ion-button color="danger" (click)="moveToCancelled(item, i)" class="can">Canceled</ion-button> -->
+      <!-- New Buttons for Moving Items -->
+      <!-- <ion-button color="success" (click)="moveToDelivered(item, i)">Delivered</ion-button>
+      <ion-button color="danger" (click)="moveToCancelled(item, i)">Canceled</ion-button> -->
+    </ion-card>
+
+    <br>
+    <br>
+
+    <!-- Footer with Badge -->
+    <ion-footer class="aa">
+      <ion-tab-bar slot="bottom" class="bottom">
+        <ion-tab-button tab="home" (click)="go1()">
+          <ion-icon name="home-outline" class="vpn1"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button tab="radio" (click)="go2()">
+          <ion-icon name="search-outline" class="ser"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button tab="radio" (click)="goc()" class="icon-with-badge">
+          <ion-icon name="bag-remove-outline" class="bg"></ion-icon>
+          <ion-badge color="danger" *ngIf="cartItems.length > 0" class="badge">
+            {{ cartItems.length }}
+          </ion-badge>
+        </ion-tab-button>
+
+        <ion-tab-button tab="search" (click)="go4()">
+          <ion-icon name="person-circle-outline" class="out"></ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-footer>
+  </div>
+
+  <!-- Delivered Segment -->
+  <div *ngIf="selectedSegment === 'profile'">
+    <ion-card *ngFor="let item of deliveredItems">
+      <!-- Same card structure as Pending, without the buttons -->
+      <ion-list class="a1">
+        <img [src]="item.map" alt="">
+        <ion-badge class="image-badge" color="danger">{{item.counter}}</ion-badge>
+      </ion-list>
+      <ion-list class="b">
+        <ion-list class="ch">
+          <p class="trx">{{item.tru}}</p>
+        </ion-list>
+        <a class="trxz">${{item.price}}
+          <br>
+          <a class="ac">Subtotal: ${{item.subtotal}}</a>
+          <br>
+          <p class="ac">{{item.size}} | Color: {{item.color}}</p>
+        </a>
+      </ion-list>
+    </ion-card>
+    <br>
+    <br>
+    <!-- Footer with Badge -->
+    <ion-footer class="aa">
+      <ion-tab-bar slot="bottom" class="bottom">
+        <ion-tab-button tab="home" (click)="go1()">
+          <ion-icon name="home-outline" class="vpn1"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button tab="radio" (click)="go2()">
+          <ion-icon name="search-outline" class="ser"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button tab="radio" (click)="goc()" class="icon-with-badge">
+          <ion-icon name="bag-remove-outline" class="bg"></ion-icon>
+          <ion-badge color="danger" *ngIf="cartItems.length > 0" class="badge">
+            {{ cartItems.length }}
+          </ion-badge>
+        </ion-tab-button>
+
+        <ion-tab-button tab="search" (click)="go4()">
+          <ion-icon name="person-circle-outline" class="out"></ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-footer>
+  </div>
+
+  <!-- Cancelled Segment -->
+  <div *ngIf="selectedSegment === 'settings'">
+    <ion-card *ngFor="let item of cancelledItems">
+      <!-- Same card structure as Pending, without the buttons -->
+      <ion-list class="a1">
+        <img [src]="item.map" alt="">
+        <ion-badge class="image-badge" color="danger">{{item.counter}}</ion-badge>
+      </ion-list>
+      <ion-list class="b">
+        <ion-list class="ch">
+          <p class="trx">{{item.tru}}</p>
+        </ion-list>
+        <a class="trxz">${{item.price}}
+          <br>
+          <a class="ac">Subtotal: ${{item.subtotal}}</a>
+          <br>
+          <p class="ac">{{item.size}} | Color: {{item.color}}</p>
+        </a>
+      </ion-list>
+    </ion-card>
+    <br>
+    <br>
+    <!-- Footer with Badge -->
+    <ion-footer class="aa">
+      <ion-tab-bar slot="bottom" class="bottom">
+        <ion-tab-button tab="home" (click)="go1()">
+          <ion-icon name="home-outline" class="vpn1"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button tab="radio" (click)="go2()">
+          <ion-icon name="search-outline" class="ser"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button tab="radio" (click)="goc()" class="icon-with-badge">
+          <ion-icon name="bag-remove-outline" class="bg"></ion-icon>
+          <ion-badge color="danger" *ngIf="cartItems.length > 0" class="badge">
+            {{ cartItems.length }}
+          </ion-badge>
+        </ion-tab-button>
+
+        <ion-tab-button tab="search" (click)="go4()">
+          <ion-icon name="person-circle-outline" class="out"></ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-footer>
+  </div>
+</ion-content>

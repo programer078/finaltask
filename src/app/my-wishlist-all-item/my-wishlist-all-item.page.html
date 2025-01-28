@@ -1,0 +1,176 @@
+<ion-content [fullscreen]="true">
+  <!-- <ion-menu contentId="main-content" class="men">
+    <ion-item lines="none" class="itas">
+      <ion-avatar slot="start" class="start">
+        <img src="../../assets/icon/avatar.png">
+      </ion-avatar>
+      <ion-label>
+        <h2 class="p2">Sunie Pham</h2>
+        <p class="p1">sunieuxgmail.com</p>
+      </ion-label>
+    </ion-item>
+    <br>
+    <br>
+    <ion-item routerLink="/homepage"detail="false" lines="none" (click)="home()" >
+      <ion-icon slot="start" name="home-outline" class="i1as"></ion-icon>
+      <ion-label class="p4as">Homepage</ion-label>
+    </ion-item>
+    <ion-item routerLink="/homepage"detail="false" lines="none" (click)="ser()">
+      <ion-icon slot="start" name="search-outline"class="i1as"></ion-icon>
+      <ion-label class="p4as">Discover</ion-label>
+    </ion-item>  
+    <ion-item routerLink="/homepage"routerLink="/homepage"detail="false" lines="none" (click)="ord()">
+      <ion-icon slot="start" name="bag-handle-outline"class="i1as"></ion-icon>
+      <ion-label class="p4as">My Order</ion-label>
+    </ion-item>
+    <ion-item routerLink="/homepage"detail="false" lines="none" (click)="pro()">
+      <ion-icon slot="start" name="person-outline"class="i1as"></ion-icon>
+      <ion-label class="p4as">My profile</ion-label>
+    </ion-item>
+    <br>
+      <ion-label class="p5as">OTHER</ion-label>
+      <br>
+    <ion-item routerLink="/homepage"detail="false" lines="none"(click)="set()">
+      <ion-icon slot="start" name="settings-outline"class="i1as"></ion-icon>
+      <ion-label class="p4as">Setting</ion-label>
+    </ion-item>
+    <ion-item routerLink="/homepage"detail="false" lines="none"(click)="rate()">
+      <ion-icon slot="start" name="mail-outline"class="i1as"></ion-icon>
+      <ion-label class="p4as">Support</ion-label>
+    </ion-item>   
+      <ion-item routerLink="/homepage"detail="false" lines="none"(click)="order()">
+      <ion-icon slot="start" name="alert-circle-outline"class="i1as"></ion-icon>
+      <ion-label  class="p4as">About us</ion-label>
+    </ion-item>  
+    <br> 
+   <ion-segment value="default" class="def">
+    <ion-segment-button value="default">
+      <ion-label class="lab">
+        <ion-icon name="sunny" class="smoo"></ion-icon>
+        &nbsp;
+        Light
+      </ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="segment">
+      <ion-label class="lab">
+        <ion-icon name="moon" class="smoo"></ion-icon>
+        &nbsp;
+        Dark
+      </ion-label>
+    </ion-segment-button>
+  </ion-segment>
+   <br>
+   <br>
+  </ion-menu> -->
+  <div class="ion-page" id="main-content">
+    <ion-list vcl>
+      <ion-toolbar class="tol">
+        <ion-list  slot="start" class="icon" (click)="goBack()" >
+    <ion-icon name="chevron-back-outline" class="bacx"></ion-icon>
+        </ion-list>
+        <p class="wix">My Wishlist</p>
+        <ion-buttons slot="end">
+          <ion-button>
+            <ion-icon name="notifications-outline" class="notx"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-list>
+  </div>
+  <ion-segment [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event)" class="segment-1" style="margin-top: 70px;">
+    <ion-segment-button value="default">
+      <ion-label>All item</ion-label>
+    </ion-segment-button>
+    <!-- <ion-segment-button value="segment">
+      <ion-label>Boards</ion-label>
+    </ion-segment-button> -->
+  </ion-segment>
+
+  <div *ngIf="selectedSegment === 'default'">
+    <ion-list class="last">
+      <ion-grid >
+        <ion-row>
+          <ion-col size="6" size-md="2"  *ngFor="let item of favoriteItems" (click)="kh(item)">
+            <div class="image-container">
+              <img [src]="item.img" alt="product image" class="product-image">
+              <!-- Favorite Icon Positioned Over Image -->
+              <ion-button class="favorite-icon" fill="clear" (click)="toggleFaorite(item)">
+                <ion-icon 
+                  [name]="item.isFavorite ? 'heart' : 'heart-outline'" 
+                  [style.color]="item.isFavorite ? 'red' : 'black'">
+                </ion-icon>
+              </ion-button>
+            </div>
+            <ion-list class="t1"> <span class="linx">{{item.lin}}</span>
+              <br>
+              <a class="dolx">{{item.dol}}</a><br>
+              <!-- <img [src]="item.img1" alt="" class="imx"><span class="texx">{{item.tex}}</span> -->
+            </ion-list>
+            
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      </ion-list>
+<ion-footer class="aa">
+    <ion-tab-bar slot="bottom" class="bottom" >
+      <ion-tab-button tab="home" (click)="go1()">
+     <ion-icon name="home-outline" class="homx"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="radio" (click)="go2()">
+        <ion-icon name="search-outline" class="smoo"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="radio" (click)="go3()" class="icon-with-badge">
+        <ion-icon name="bag-remove-outline" class="bg"></ion-icon>
+        <ion-badge color="danger" *ngIf="cartItems.length > 0" class="badge">
+          {{ cartItems.length }}
+        </ion-badge>
+      </ion-tab-button>
+      <ion-tab-button tab="search" (click)="go4()">
+        <ion-icon name="person-circle-outline" class="cirx">
+        </ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-footer>
+  </div>
+  
+  <!-- <div *ngIf="selectedSegment === 'segment'">
+    <ion-list class="mean1">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="12" size-md="4" *ngFor="let item2 of inda" >
+             <img [src]="item2.wc" alt="" class="cmix">
+             <ion-list class="a">
+              <p class="go2x"><span>{{item2.gog}}</span>
+                <br>
+                <span class="itx">{{item2.item}}</span>
+                <br>
+              </p>
+             <ion-icon name="chevron-forward-outline" class="forx">
+             </ion-icon>
+             <hr>
+             </ion-list>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-list>
+      <ion-tabs class="aa">
+        <ion-tab-bar slot="bottom" class="bottom">
+          <ion-tab-button tab="home" (click)="go1()">
+         <ion-icon name="home-outline" class="homx"></ion-icon>
+          </ion-tab-button>
+          <ion-tab-button tab="radio" (click)="go2()">
+            <ion-icon name="search-outline" class="smoo"></ion-icon>
+          </ion-tab-button>
+          <ion-tab-button tab="radio" (click)="go3()">
+            <ion-icon name="bag-remove-outline" class="bgx"></ion-icon>
+          </ion-tab-button>
+          <ion-tab-button tab="search" (click)="go4()">
+            <ion-icon name="person-circle-outline" class="cirx">
+            </ion-icon>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+  </div>
+   -->
+  
+</ion-content>

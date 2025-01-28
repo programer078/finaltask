@@ -1,0 +1,45 @@
+.post1{
+    height: 250px;
+    width: 100%;
+}
+.post-2{
+    height: 250px;
+    width: 100%;
+}
+.gr{
+    margin-top: 30px;
+}
+.cb{
+margin-top: 20px;
+}
+.bxz{
+border-radius: 50%;
+}
+.imz{
+width: 100%; height: 250px;
+}
+.p1{
+margin-top: 7px;
+ font-weight: bolder;
+}
+.spz{
+font-size: 10px; 
+font-weight: normal;
+}
+.loog{
+    height: 70px; width: 50%;
+    margin-inline: auto;
+}
+.mean{
+    height: 1400; width: 100%;
+
+}
+@media (min-width: 900px) and (max-width: 1600px) {
+    .mean{
+     width: 400px;
+    margin-inline: auto;
+  }
+  }
+  swiper-container::part(bullet-active){
+    background-color: white;
+  }

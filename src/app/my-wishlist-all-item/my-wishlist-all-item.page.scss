@@ -1,0 +1,361 @@
+.i1{
+    height: 30px;
+     width: 30px; 
+     margin-top: 12px;
+     float: right;
+    }
+    .p{
+    font-size: large;
+     font-weight: bolder; 
+     text-align: center;
+    }
+    .i2{
+        height: 25px;
+        width: 25px;
+        margin-top: 15px;
+        
+        }
+        .c3a{
+          z-index: 2;
+          height: 200px;
+        }
+       .c3{
+            height: 200px; width: 130px;
+            border-radius: 10px;
+          }.c4{
+            height: 200px; width: 130px;
+            border-radius: 10px;
+       
+          }
+          .c4a{
+            z-index: 2;
+            height: 200px; 
+          }
+          .c5{
+            height: 200px; width: 130px;
+            border-radius: 10px;
+          }.c6{
+            height: 200px; width: 130px;
+            border-radius: 10px;
+   
+          }
+          .c5a{
+            z-index: 2;
+            height: 200px; 
+          }
+          .c6a{
+            z-index: 2;
+            height: 200px; 
+          }
+          .mean{
+            width: 90%;
+            margin-inline: auto;
+            height: 900px;
+          }
+          .mean1{
+            width: 90%;
+            margin-inline: auto;
+            height: 800px;
+          }
+          .c5{
+            height: 200px; width: 130px;
+            border-radius: 10px;
+      
+          }.c6{
+            height: 200px; width: 130px;
+            border-radius: 10px;
+    
+          }
+          ion-segment {
+            position: relative;
+            z-index: 1; // Ensure it's on top if it's being pushed behind something
+            margin-bottom: 10px; // Add some space if needed
+          }
+          ion-segment-button{
+            --indicator-color: black;
+          }
+          ion-segment-button.md{
+            --color: #000;
+            --color-checked:black;
+            --indicater-height: 4px;
+          }
+          ion-segment-button.ios{
+            --color: #000;
+            --color-checked: white;
+            --border-radius: 0px;
+          }
+          .segment-1{
+            margin-top: 20px;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 0px;
+            border: solid 1px black;
+            background-color: white;
+          }
+
+.bottom{
+  width: 100%;
+  height: 60px;
+  position: fixed;
+ bottom: 0px;
+ --background: white;
+ color: white;
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+  
+  
+}
+.aa{
+  contain: none;
+}
+.a{
+  --border-color:white;
+  --background: white;
+  
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc; /* or any color you prefer */
+    width: 100%;
+  }
+  .last{
+    height: 900px; width: 83%;
+    margin-inline: auto;
+}
+.c1{
+  height: 200px; width: 130px;
+  border-radius: 10px;
+
+}
+ion-menu::part(backdrop) {
+  background-color: gray;
+}
+
+ion-menu::part(container) {
+  border-radius: 0 20px 20px 0;
+
+  box-shadow: 4px 0px 16px gray;
+}
+.itas{
+  margin-inline: auto;
+  margin-top: 50px;
+}
+
+
+
+
+.p1as{
+  color: black;
+}
+.p2as{
+  font-weight: bolder;
+}
+.p4as{
+  font-weight: bolder;
+  color: gray;
+}
+.i1as{
+  height: 20px; width: 20px;
+  margin-left: 20px;
+}
+.p5as{
+  color: gray;
+  margin-left: 37px;
+  font-weight: 650;
+}
+.lastas{
+  height: 40px; width: 75%;
+  border-radius: 20px;
+  margin-inline: auto;
+  background-color: rgba(128, 128, 128, 0.342);
+  
+}
+.start{
+height: 50px; width: 50px;
+}
+.def{
+width: 75%; margin-inline: auto;
+}
+.tol{
+--background: white;
+}
+.bux{
+color: black;
+}
+.wix{
+text-align: center;
+margin-right: 30px;
+justify-content: center;
+}
+.homx{
+height: 20px; 
+width: 20px; 
+color: black;
+}
+.hert{
+  height: 30px; width: 30px;
+  float: right;
+  border-radius: 15px;
+  margin-top: -25px;
+  margin-right: 20px;
+justify-content: center;
+display: flex;
+align-items: center;
+}
+.go2x{
+font-size: large; 
+font-weight: bolder;
+ float: left;
+}
+.itx{
+color: black; 
+font-size: 12px; 
+color: gray;
+}
+.forx{
+  float: right; color: gray;
+   height: 20px;
+    width: 20px;
+     margin-top: 20px;
+}
+.cirx{
+height: 20px; width:
+ 20px; color: gray;
+  display: flex;
+   justify-content: center;
+    align-items: center;
+}
+.bgx{
+height: 20px;
+ width: 20px;
+  color: gray;
+}
+.notx{
+color: black;
+}
+.dolx{
+font-weight: bolder;
+ color: black;
+ margin-top: 15px; 
+ margin-left: 5px;
+}
+.dolzd{
+font-size: 12px;color:
+ rgba(128, 128, 128, 0.438);
+ text-decoration: line-through;
+ margin-left: 10px;
+}
+.texx{
+font-size: 12px;
+}
+.imx{
+height: 13px;
+ width: 50px;
+}
+.linx{
+font-family: 'Gill Sans', 
+'Gill Sans MT', Calibri,
+ 'Trebuchet MS', sans-serif;
+ margin-left: 5px;
+}
+.product-container {
+  position: relative; /* Ensure the icon is positioned relative to the product container */
+}
+.icon{
+  height: 30px; width: 30px;
+  margin-left: 2%;
+  margin-top: 5px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.329);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.product-image {
+  width: 100%; /* Ensure the image takes up full width */
+  height: 200px; /* Maintain aspect ratio */
+}
+
+.favorite-icon {
+  position: absolute;
+  margin-top: -10px;
+   /* Adjust to your liking */
+  left:  80px; /* Adjust to your liking */
+  z-index: 10; /* Ensure the icon appears on top of the image */
+  font-size: 20px; /* Adjust the size of the icon if needed */
+}
+
+.iconz{
+height: 20px; width: 20px;
+float: right;margin-right: 
+10px; top: 30px; z-index:
+ 50; position: relative;
+}
+.lab{
+display: flex;
+align-items: center;
+}
+.smoo{
+height: 20px; width: 20px;
+}
+.lightas{
+  height: 30px; width: 40%;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 6px;
+  margin-left: 4px;
+  align-items: center;
+  display: flex;
+float: left;
+}
+.me{
+position: fixed;
+--background: white;
+}
+.light1as{
+  height: 30px; width: 40%;
+  background: transparent;
+  border-radius: 20px;
+  margin-top: 6px;
+  margin-right: 4px;
+  align-items: center;
+  display: flex;
+float: right;
+
+}
+body[color-theme='dark'] {
+  --ion-background-color: #121212;
+  --ion-text-color: #ffffff;
+}
+
+body[color-theme='light'] {
+  --ion-background-color: #ffffff;
+  --ion-text-color: #000000;
+}
+
+.c1a{
+  z-index: 2;
+  height: 200px; 
+}
+  .cmix{
+    width: 100%;
+  }
+  @media (min-width: 900px) and (max-width: 1600px) {
+    .cmix{
+     width: 90%;
+    margin-inline: auto;
+  }
+  }
+  @media (min-width: 900px) and (max-width: 1600px) {
+    .a{
+   width: 88%;
+  }
+  }

@@ -1,0 +1,72 @@
+<ion-content [fullscreen]="true">
+ <ion-list class="r">
+    <ion-grid>
+        <ion-row>
+          <ion-col size="2">
+            <ion-list class="arow" (click)="goBack()">
+              <ion-icon name="chevron-back-outline" class="c1"></ion-icon>
+          </ion-list>
+          </ion-col>
+          <ion-col size="8">
+            <p class="p1">Order #1514</p>
+          </ion-col>
+          <ion-col size="2"></ion-col>
+        </ion-row>
+    </ion-grid>
+ <ion-list class="first">
+    <br>
+    <p  class="p2">Your order is delivered <br>
+        <span class="s1">Rate product to get 5 points for collect.</span>
+    </p>
+    <ion-list class="ord">
+        <img src="../../assets/icon/order.png" alt="">
+    </ion-list>
+ </ion-list>
+ <br>
+  <ion-list class="fist2">
+    <ion-list>
+    <p class="p3">Order number</p>
+    <p class="p4">#1514</p>
+</ion-list>
+<ion-list>
+    <p class="p5">Tracking Number</p>
+    <p class="p6">  IK987362341</p> 
+</ion-list>
+<p class="p7">Delivery address</p>
+<p class="p8"> Software Park</p>
+ </ion-list>
+    <ion-list class="receipt-container">
+      <ion-list class="receipt-item">
+        <span>Maxi Dress</span>
+        <span>x1</span>
+        <span>$68.00</span>
+      </ion-list>
+      <ion-list class="receipt-item">
+        <span>Linen Dress</span>
+        <span>x1</span>
+        <span>$52.00</span>
+      </ion-list>
+      <ion-list class="receipt-total">
+        <ion-list class="receipt-subtotal">
+          <span>Sub Total</span>
+          <span>$120.00</span>
+        </ion-list>
+        <ion-list class="receipt-shipping">
+          <span>Shipping</span>
+          <span>$0.00</span>
+        </ion-list>
+        <hr>
+        <ion-list class="receipt-final-total">
+          <span>Total</span>
+          <span>$120.00</span>
+        </ion-list>
+    </ion-list>
+</ion-list>
+<ion-list class="retu"(click)="hom()">
+    <p class="p9">Return home</p>
+</ion-list>
+<ion-list class="rat" (click)="goto()">
+    <p class="p10">Rate</p>
+</ion-list>
+</ion-list>
+</ion-content>

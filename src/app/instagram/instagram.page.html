@@ -1,0 +1,52 @@
+<ion-content [fullscreen]="true">
+  <ion-list class="mean">
+    <ion-list class="loog">
+      <img src="../../assets/icon/insta.png" alt="" >
+    </ion-list>
+    <ion-list *ngFor="let item of ind">
+      <ion-grid class="gr">
+        <ion-row>
+          <ion-col size="2">
+            <img class="bxz" [src]="item.user.profileImg" alt="">
+          </ion-col>
+          <ion-col size="9">
+            <p class="p1">
+              {{ item.user.name }}<br>
+              <span class="spz">{{ item.user.location }}</span>
+            </p>
+          </ion-col>
+          <ion-col size="1">
+            <ion-icon name="ellipsis-vertical-outline" class="cb"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  
+      <swiper-container class="mySwiper custom-swiper" pagination="true" [loop]="true">
+        <swiper-slide *ngFor="let image of item.images">
+          <ion-list class="item1">
+            <img [src]="image" alt="" class="imz">
+          </ion-list>
+        </swiper-slide>
+      </swiper-container>
+  
+      <ion-grid>
+        <ion-row>
+          <ion-col size="2" style="text-align: center;">
+            <ion-icon name="heart-outline"></ion-icon> {{ item.likes }}
+          </ion-col>
+          <ion-col size="2">
+            <ion-icon name="chatbubble-ellipses-outline"></ion-icon> {{ item.comments }}
+          </ion-col>
+          <ion-col size="6">
+            <ion-icon name="bookmark-outline"></ion-icon> {{ item.bookmarks }}
+          </ion-col>
+          <ion-col size="2">
+            <ion-icon name="paper-plane-outline"></ion-icon> {{ item.shares }}
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-list>
+  </ion-list>
+  <app-card></app-card>
+</ion-content>
+ 

@@ -1,0 +1,85 @@
+ion-menu::part(backdrop) {
+    background-color: gray;
+  }
+  
+  ion-menu::part(container) {
+    border-radius: 0 20px 20px 0;
+  
+    box-shadow: 4px 0px 16px gray;
+  }
+.itas{
+    margin-inline: auto;
+    margin-top: 50px;
+}
+  
+
+  
+  
+.p1as{
+    color: black;
+}
+.p2as{
+    font-weight: bolder;
+}
+.p4as{
+    font-weight: bolder;
+    color: gray;
+}
+.i1as{
+    height: 20px; width: 20px;
+    margin-left: 20px;
+}
+.p5as{
+    color: gray;
+    margin-left: 37px;
+    font-weight: 650;
+}
+.lastas{
+    height: 40px; width: 75%;
+    border-radius: 20px;
+    margin-inline: auto;
+    background-color: rgba(128, 128, 128, 0.342);
+    
+}
+.lightas{
+    height: 30px; width: 40%;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 6px;
+    margin-left: 4px;
+    align-items: center;
+    display: flex;
+  float: left;
+}
+.light1as{
+    height: 30px; width: 40%;
+    background: transparent;
+    border-radius: 20px;
+    margin-top: 6px;
+    margin-right: 4px;
+    align-items: center;
+    display: flex;
+  float: right;
+
+}
+.lab{
+display: flex;
+ align-items: center;
+}
+.mooon{
+height: 20px; 
+width: 20px;
+}
+.ox{
+height: 50px; width: 50px;
+}
+body[color-theme='dark'] {
+    --ion-background-color: #121212;
+    --ion-text-color: #ffffff;
+  }
+  
+  body[color-theme='light'] {
+    --ion-background-color: #ffffff;
+    --ion-text-color: #000000;
+  }
+  

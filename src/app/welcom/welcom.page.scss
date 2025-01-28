@@ -1,0 +1,41 @@
+.mean{
+    height: 740px; width: 100%;
+    background-image: url(../../assets/icon/page1.png);
+    background-size: cover;
+    background-position: center;
+    max-width: 400px;
+    margin-inline: auto;
+}
+.grt{
+color: white; 
+cursor: pointer;
+}
+.wel{
+color: white; 
+font-size: large;
+ font-weight: bolder;
+  text-align: center;
+}
+.the{
+    color: white; 
+    font-size: x-small;
+     font-weight: bolder;
+      text-align: center;
+      
+    }
+.center{
+    height: 150px; width: 80%;
+    margin-inline: auto;
+    background: transparent;
+    margin-top: 27rem;
+}
+.button{
+    height: 40px; width: 40%;
+    border: solid 1px white;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.596);
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

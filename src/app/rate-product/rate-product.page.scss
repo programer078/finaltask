@@ -1,0 +1,127 @@
+.r{
+    background-color: rgba(128, 128, 128, 0.041);
+    height: 700px; width: 100%;
+}
+.arow{
+    height: 30px; width: 30px;
+    float: left;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0,0.329);
+    background-color: white;
+    }
+    .fifx{
+    font-size: 12px; 
+    color: gray; 
+    float: right; 
+    margin-right: 20px; 
+    margin-top: 13rem;
+    }
+    .p1{
+        text-align: center;
+         margin-top: 25px;
+         font-weight: bolder;
+         }
+         .fist{
+            height: 60px; width: 90%;
+            margin-inline: auto;
+            background-color: rgba(0, 0, 0, 0.733);
+            border-radius: 10px;
+            align-items: center;
+            
+         }
+         .i1{
+            height: 30px; width: 30px;
+            color: white;
+            margin-top: 10px;
+            margin-left: 20px;
+            float: left;
+         }
+         .p3{
+           color: white;
+            float: left; 
+            font-size: 12px;
+            margin-top: 20px;
+            margin-left: 10px;
+         }
+         .sub1{
+        color: white;cursor: pointer;
+         }
+         .i2{
+        height: 20px; width: 20px;
+        color: white;
+        float: right;
+        margin-top: 15px;
+        margin-right: 20px;
+         }
+         .star{
+            height: 40px; width: 70%;
+            margin-inline: auto;
+            background: transparent;
+            display: flex;
+            align-items: center;
+         }
+         @media (min-width: 900px) and (max-width: 1600px) {
+            .star{
+            width: 300px;    
+            margin-inline: auto;
+          }
+          }
+         .i4{
+            height: 40px; width: 40px;
+            color: rgba(1, 80, 1, 0.568);
+         }
+         .i5{
+            height: 40px; width: 40px;
+            color: gray;
+         }
+         .input-container {
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: white;
+            width: 90%;
+            height: 250px;
+            margin-inline: auto;
+        }
+       input {
+            border: none;
+            background-color: transparent;
+            outline: none;
+            flex: 1;
+            font-size: 14px;
+            color: #b0b0b0;
+        }
+        input::placeholder {
+            color: #b0b0b0;
+        }
+        .cam{
+            height: 100px; width: 90%;
+            margin-inline: auto;
+            background: transparent;
+            display: flex;
+        align-items: center        }
+        .pic1{
+            height: 80px; width: 80px;
+            background: transparent;
+          
+        }
+        .pic2{
+            height: 80px; width: 80px;
+            background: transparent;
+        }
+        .sub{
+            height: 60px; width: 90%;
+            margin-inline: auto;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            border-radius: 30px;
+            justify-content: center;
+        }
+        
+        

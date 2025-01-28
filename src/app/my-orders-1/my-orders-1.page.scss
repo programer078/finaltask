@@ -1,0 +1,463 @@
+.i1{
+    height: 30px;
+     width: 30px; 
+     margin-top: 12px;
+    }
+    .p{
+    font-size: large;
+     font-weight: bolder; 
+     text-align: center;
+    }
+    .i2{
+    height: 25px;
+    width: 25px;
+    margin-top: 15px;
+    float: right;
+    }
+    ion-segment {
+        --background: #f8f8f8;
+        --indicator-color: #3880ff;
+        --color-checked: #3880ff;
+        background: transparent;
+      }
+      ion-segment-button{
+        --indicator-color: grey;
+        background: transparent;
+
+      }
+      ion-segment-button.md{
+        --color: #000;
+        --color-checked:black;
+        --indicater-height: 4px;
+        background: transparent;
+
+      }
+      ion-segment-button.ios{
+        --color: #000;
+        --color-checked: white;
+        --border-radius: 20px;
+        background: transparent;
+
+      }
+      .segment-1{
+        margin-top: 20px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0px;
+        background-color: white;
+        background: transparent;
+
+      }
+  .me{
+  position: fixed;--background: white;
+  }
+      h1 {
+        margin: 20px;
+      }
+      .la{
+      display: flex;
+       align-items: center;
+      }
+      .lis{
+      height: 50px;
+       width: 90%;
+        margin-inline: auto;
+      }
+      .datv{
+      float: right; margin-right:
+       10px;align-items: center;
+        font-size: medium;
+      }
+      .digx{
+      color: black; 
+      font-weight: bolder;
+      }
+      .trcx{
+      float: left; 
+      margin-left: 20px;
+      }
+      .ser{
+      height: 20px; width: 20px;
+      }
+      .ac{
+        font-size: 10px;
+        color: gray;
+      }  
+      .image-badge {
+        position: absolute;
+        top: 10px; /* Image ke top se kitna distance hona chahiye */
+        right: 10px; /* Image ke right se kitna distance hona chahiye */
+        font-size: 12px; /* Badge ki size */
+        padding: 5px;
+        border-radius: 50%;
+      }
+      
+      .trxz{
+        color: black;margin-left: 10px;
+        font-weight: bolder; float: left;
+        font-size: 18px;
+        }
+        .qz{
+          font-weight: bolder;
+          font-size: 20px;
+          margin-top: 30px;
+          float: right;
+          color: black;
+        }
+      .avt{
+        height: 50px; width: 50px;
+      }
+      .b{
+        height: 120px;
+        width: 220px;
+        float: left;
+      }
+      .ch{
+        height: 40px; width: 150px;
+      //   margin-top: 15px;
+      }
+      .trx{
+        color: black;margin-left: 10px;
+        font-weight: bolder; float: left;
+        }
+      .bg{
+        height: 20px;
+         width: 20px; color: gray
+      }
+      .qzx{
+      float: left; margin-left: 20px;
+      }
+      .dfg{
+        float: left; margin-left: 20px;
+      }
+      .zaq{
+      float: right;margin-right: 10px;
+      }
+      .mnh{
+        color: rgba(255, 0, 0, 0.815); 
+        margin-left: 20px; float: left;
+      }
+      .org{
+      color: black; font-weight:
+       bolder;margin-left: 20px; 
+       font-size: large;
+        float: left;
+      }
+      .zcx{
+      float: right; margin-right:
+       10px;align-items: center; 
+       font-size: medium;
+      }
+      .sub{
+      float: right;margin-right: 10px;
+      }
+      .pad{
+        color: rgba(0, 128, 0, 0.61);
+         margin-left: 20px; float: left;
+      }
+      .datz{
+      float: right; margin-right:
+       10px;align-items: center; 
+       font-size: medium;
+      }
+      .trz{
+      float: left; margin-left: 20px;
+      }
+      .itevx{
+        color: black; font-weight:
+         bolder;margin-left: 20px;
+          font-size: large; float: left;
+      }
+      .out{
+      height: 20px; width: 20px;
+       color: gray; display: flex; 
+       justify-content: center; 
+       align-items: center;
+      }
+      .bvn{
+      margin-left: 20px;
+       float: left;
+      }
+      .bvn2{
+      float: right;
+      margin-right: 10px;
+      }
+      .vpn1{
+      height: 20px; width: 20px;
+       color: black;
+      }
+      .bvn3{
+      color: rgb(255, 166, 0);
+       margin-left: 20px; float: left;
+      }
+      .mbou{
+        color: black;
+      }
+      .icon{
+        height: 50px; width: 40px;
+        margin-left: 2%;
+        margin-top: 0px;
+        border-radius: 20px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }.icon{
+      height: 30px; width: 30px;
+      margin-left: 2%;
+      margin-top: -2px;
+      border-radius: 15px;
+      background-color: #fff;
+      display: flex;
+      border: solid 1px rgba(0, 0, 0, 0.555);
+      justify-content: center;
+      align-items: center;
+  }
+      .not{
+        color: black;
+      }
+      .ord{
+      color: black; font-weight:
+       bolder;margin-left: 20px; 
+       font-size: large; float: left;
+      }
+      .tol{
+        --background: white;
+      }
+      .mo{
+      text-align: center; 
+      margin-right: 30px; 
+      justify-content: center;
+      }
+      .smo{
+      height: 20px; width: 20px;
+      }
+      .ds{
+        width: 75%; margin-inline: auto;
+      }
+    .se{
+        height: 80px; width: 90%;
+        margin-inline: auto;
+        margin-top: 50px;
+    }
+    ion-segment {
+        position: relative;
+        z-index: 1; // Ensure it's on top if it's being pushed behind something
+        margin-bottom: 10px; // Add some space if needed
+      }
+    .pa{
+        height: 30px; width: 90px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.685);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pa1{
+        height: 30px; width: 90px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-inline: auto;
+    }
+    .pa2{
+        height: 30px; width: 90px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: right;
+    }
+    .trac{
+        height: 30px; width: 100%;
+        float: left;
+        display: flex;
+        align-items: center;
+    }
+    
+    .second1{
+        height: 35px; width: 100%;
+        align-items: center;
+        float: right;
+    }
+    .last{
+        height: 50px; width: 100%;
+        align-items: center;
+    }
+    .de{
+        height: 40px; width: 100px;
+        border: solid 1px gray;
+        float: right;
+        margin-right: 10px;
+        border-radius: 20px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+
+    }
+    ion-menu::part(backdrop) {
+      background-color: gray;
+    }
+    
+    ion-menu::part(container) {
+      border-radius: 0 20px 20px 0;
+    
+      box-shadow: 4px 0px 16px gray;
+    }
+  .itas{
+      margin-inline: auto;
+      margin-top: 50px;
+  }
+    
+  
+    
+    
+  .p1as{
+      color: black;
+  }
+  .p2as{
+      font-weight: bolder;
+  }
+  .p4as{
+      font-weight: bolder;
+      color: gray;
+  }
+  .i1as{
+      height: 20px; width: 20px;
+      margin-left: 20px;
+  }
+  .p5as{
+      color: gray;
+      margin-left: 37px;
+      font-weight: 650;
+  }
+  .lastas{
+      height: 40px; width: 75%;
+      border-radius: 20px;
+      margin-inline: auto;
+      background-color: rgba(128, 128, 128, 0.342);
+      
+  }
+  .lightas{
+      height: 30px; width: 40%;
+      background-color: white;
+      border-radius: 20px;
+      margin-top: 6px;
+      margin-left: 4px;
+      align-items: center;
+      display: flex;
+    float: left;
+  }
+  .light1as{
+      height: 30px; width: 40%;
+      background: transparent;
+      border-radius: 20px;
+      margin-top: 6px;
+      margin-right: 4px;
+      align-items: center;
+      display: flex;
+    float: right;
+  
+  }
+  body[color-theme='dark'] {
+      --ion-background-color: #121212;
+      --ion-text-color: #ffffff;
+    }
+    
+    body[color-theme='light'] {
+      --ion-background-color: #ffffff;
+      --ion-text-color: #000000;
+    }
+    
+    .bottom{
+        width: 100%;
+        height: 60px;
+        position: fixed;
+       bottom: 0px;
+       --background: white;
+       color: white;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+        
+        
+      }
+      .aa{
+        contain: none;
+      }
+      .a{
+        --border-color:white;
+        --background: white;
+        
+      }
+      .a1{
+        float: left;
+        height: 120px;
+        width: 110px;
+         
+
+        
+      }
+      .icon-with-badge {
+        position: relative;
+      }
+      .dea{
+        height: 30px;
+        width: 80px;
+        border-radius: 10px;
+        float: right;
+        color: white;
+        background:green;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      
+      }
+      @media (min-width: 900px) and (max-width: 1600px) {
+        .zxc{
+    margin-top: -30px;
+      left: 30px;
+      background: transparent;
+      }
+      }
+      .zxc{
+        margin-top: -10px;
+        background: transparent;
+      }
+     
+      .can{
+        height: 30px;
+        width: 80px;
+        border-radius: 10px;
+       float: right;
+       color: white;
+       text-align: center;
+       justify-content: center;
+       display: flex;
+       margin-top: 10px;
+       background:red;
+       align-items: center;
+
+      }
+      .badge {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        font-size: 12px;
+        padding: 2px 6px;
+        border-radius: 50%;
+      }
+      
+      .item-name{
+        height: 30px; 
+        width: 100%; 
+        margin-top: 10px;
+         display: flex; 
+        justify-content: space-between;
+      }
+      .he{
+        border: none;
+        outline: none;
+      }

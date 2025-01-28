@@ -1,0 +1,78 @@
+<ion-content [fullscreen]="true">
+  <ion-app>
+    <ion-menu contentId="main-content">
+      <ion-item lines="none" class="itas">
+        <ion-avatar slot="start" class="iox">
+          <img src="../../assets/icon/avatar.png">
+        </ion-avatar>
+        <ion-label>
+          <h2 class="p2as">Sunie Pham</h2>
+          <p class="p1as">sunieuxgmail.com</p>
+        </ion-label>
+      </ion-item>
+      <br>
+      <br>
+      <ion-item routerLink="/homepage"detail="false" lines="none">
+        <ion-icon slot="start" name="home-outline" class="i1as"></ion-icon>
+        <ion-label class="p4as">Homepage</ion-label>
+      </ion-item>
+      <ion-item routerLink="/homepage"detail="false" lines="none">
+        <ion-icon slot="start" name="search-outline"class="i1as"></ion-icon>
+        <ion-label class="p4as">Discover</ion-label>
+      </ion-item>  
+      <ion-item routerLink="/homepage"routerLink="/homepage"detail="false" lines="none">
+        <ion-icon slot="start" name="bag-handle-outline"class="i1as"></ion-icon>
+        <ion-label class="p4as">My Order</ion-label>
+      </ion-item>
+      <ion-item routerLink="/homepage"detail="false" lines="none">
+        <ion-icon slot="start" name="person-outline"class="i1as"></ion-icon>
+        <ion-label class="p4as">My profile</ion-label>
+      </ion-item>
+      <br>
+        <ion-label class="p5as">OTHER</ion-label>
+        <br>
+      <ion-item routerLink="/homepage"detail="false" lines="none">
+        <ion-icon slot="start" name="settings-outline"class="i1as"></ion-icon>
+        <ion-label class="p4as">Setting</ion-label>
+      </ion-item>
+      <ion-item routerLink="/homepage"detail="false" lines="none">
+        <ion-icon slot="start" name="mail-outline"class="i1as"></ion-icon>
+        <ion-label class="p4as">Support</ion-label>
+      </ion-item>   
+        <ion-item routerLink="/homepage"detail="false" lines="none">
+        <ion-icon slot="start" name="alert-circle-outline"class="i1as"></ion-icon>
+        <ion-label  class="p4as">About us</ion-label>
+      </ion-item>  
+      <br> 
+     <ion-segment value="default" style="width: 75%; margin-inline: auto;">
+      <ion-segment-button value="default">
+        <ion-label style="display: flex; align-items: center;">
+          <ion-icon name="sunny" style="height: 20px; width: 20px;"></ion-icon>
+          &nbsp;
+          Light
+        </ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="segment">
+        <ion-label class="lab">
+          <ion-icon name="moon" class="moon"></ion-icon>
+          &nbsp;
+          Dark
+        </ion-label>
+      </ion-segment-button>
+    </ion-segment>
+     <br>
+     <br>
+    </ion-menu>
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding"> Tap the button in the toolbar to open the menu. </ion-content>
+    </div>
+  </ion-app>
+</ion-content>

@@ -1,0 +1,359 @@
+
+<ion-content [fullscreen]="true">
+ 
+  <ion-menu contentId="main-content" class="co" >
+    <ion-item lines="none" class="it">
+      <ion-avatar slot="start" class="st">
+        <img src="../../assets/icon/avatar.png">
+      </ion-avatar>
+      <ion-label>
+        <h2 class="p2">Sunie Pham</h2>
+        <p class="p1">sunieuxgmail.com</p>
+      </ion-label>
+    </ion-item>
+    <br>
+    <br>
+    <ion-item routerLink="/homepage"detail="false" lines="none" (click)="home()" >
+      <ion-icon slot="start" name="home-outline" class="i1"></ion-icon>
+      <ion-label class="p41">Homepage</ion-label>
+    </ion-item>
+    <ion-item routerLink="/homepage"detail="false" lines="none" (click)="ser()">
+      <ion-icon slot="start" name="search-outline"class="i1"></ion-icon>
+      <ion-label class="p41">Discover</ion-label>
+    </ion-item>  
+    <ion-item routerLink="/homepage"routerLink="/homepage"detail="false" lines="none" (click)="ord()">
+      <ion-icon slot="start" name="bag-handle-outline"class="i1"></ion-icon>
+      <ion-label class="p41">My Order</ion-label>
+    </ion-item>
+    <ion-item routerLink="/homepage"detail="false" lines="none" (click)="pro()">
+      <ion-icon slot="start" name="person-outline"class="i1"></ion-icon>
+      <ion-label class="p41">My profile</ion-label>
+    </ion-item>
+    <ion-item routerLink="/homepage"detail="false" lines="none" (click)="wis()">
+      <ion-icon slot="start" name="heart-outline"class="i1"></ion-icon>
+      <ion-label class="p41">My wishlist</ion-label>
+    </ion-item>
+    <br>
+      <ion-label class="p5a">OTHER</ion-label>
+      <br>
+    <ion-item routerLink="/homepage"detail="false" lines="none"(click)="set()">
+      <ion-icon slot="start" name="settings-outline"class="i1"></ion-icon>
+      <ion-label class="p41">Setting</ion-label>
+    </ion-item>
+    <ion-item routerLink="/homepage"detail="false" lines="none"(click)="rate()">
+      <ion-icon slot="start" name="mail-outline"class="i1"></ion-icon>
+      <ion-label class="p41">Support</ion-label>
+    </ion-item>   
+      <ion-item routerLink="/homepage"detail="false" lines="none"(click)="order()">
+      <ion-icon slot="start" name="alert-circle-outline"class="i1"></ion-icon>
+      <ion-label  class="p41">About us</ion-label>
+    </ion-item>  
+    <br> 
+   <ion-segment value="default" class="def">
+    <ion-segment-button value="default">
+      <ion-label class="lab">
+        <ion-icon name="sunny" class="smo"></ion-icon>
+        &nbsp;
+        Light
+      </ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="segment">
+      <ion-label class="lab">
+        <ion-icon name="moon" class="smo"></ion-icon>
+        &nbsp;
+        Dark
+      </ion-label>
+    </ion-segment-button>
+  </ion-segment>
+   <br>
+   <br>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-list class="vg" >
+      <ion-toolbar class="tolx">
+        <ion-buttons  slot="start" class="af" >
+          <ion-menu-button class="bou"></ion-menu-button>
+        </ion-buttons>
+        <p class="gem">GemStore</p>
+        <ion-buttons slot="end">
+          <ion-button>
+            <ion-icon name="notifications-outline" class="ab"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-list>
+  </div>
+  <ion-list class="mean1">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="3" size-md="3" (click)="toggleStyle('women')" (click)="filterProducts('women')">
+        <ion-list 
+          class="c1" 
+          [ngStyle]="{'background-color': selectedFilter === 'women' ? 'black' : 'rgba(128, 128, 128, 0.226)'}">
+          <ion-icon 
+            name="male-outline" 
+            class="m1" 
+            [ngStyle]="{'color': selectedFilter === 'women' ? 'white' : 'black'}">
+          </ion-icon>
+        </ion-list>
+        <p 
+          class="p3" 
+          [ngStyle]="{'color': selectedFilter === 'women' ? 'black' : 'grey'}">
+          Women
+        </p>
+      </ion-col>
+      
+      <ion-col size="3" size-md="3" (click)="toggleStyle('men')" (click)="filterProducts('men')">
+        <ion-list 
+          class="c2" 
+          [ngStyle]="{'background-color': selectedFilter === 'men' ? 'black' : 'rgba(128, 128, 128, 0.226)'}">
+          <ion-icon 
+            name="female-outline" 
+            class="m1" 
+            [ngStyle]="{'color': selectedFilter === 'men' ? 'white' : 'black'}">
+          </ion-icon>
+        </ion-list>
+        <p 
+          class="p3" 
+          [ngStyle]="{'color': selectedFilter === 'men' ? 'black' : 'grey'}">
+          Men
+        </p>
+      </ion-col>
+      
+            
+      <ion-col size="3" size-md="3" (click)="toggleStyle('Accessori')" (click)="filterProducts('accessories')">
+        <ion-list 
+          class="c3" 
+          [ngStyle]="{'background-color': selectedFilter === 'Accessori' ? 'black' : 'rgba(128, 128, 128, 0.226)'}">
+          <ion-icon 
+            name="glasses-outline" 
+            class="m1" 
+            [ngStyle]="{'color': selectedFilter === 'Accessori' ? 'white' : 'black'}">
+          </ion-icon>
+        </ion-list>
+        <p 
+          class="p3" 
+          [ngStyle]="{'color': selectedFilter === 'Accessori' ? 'black' : 'grey'}">
+          Accessori
+        </p>
+      </ion-col>
+      <ion-col size="3" size-md="3" (click)="toggleStyle('beauty')" (click)="filterProducts('beauty')">
+        <ion-list 
+          class="c4" 
+          [ngStyle]="{'background-color': selectedFilter === 'beauty' ? 'black' : 'rgba(128, 128, 128, 0.226)'}">
+          <ion-icon 
+            name="pin-outline" 
+            class="m1" 
+            [ngStyle]="{'color': selectedFilter === 'beauty' ? 'white' : 'black'}">
+          </ion-icon>
+        </ion-list>
+        <p 
+          class="p3" 
+          [ngStyle]="{'color': selectedFilter === 'beauty' ? 'black' : 'grey'}">
+          Beauty
+        </p>
+      </ion-col>
+    
+    </ion-row>
+  </ion-grid>
+</ion-list>
+<ion-list class="swip">
+  <swiper-container [breakpoints]="
+  {
+    '360':{
+      'slidesPerView': 1,
+      'spaceBetween': 10,
+    },
+    '760':{
+      'slidesPerView':4,
+      'spaceBetween': 10,
+    },
+    '1221':{
+      'slidesPerView': 4,
+      'spaceBetween': 40,
+    }
+  }
+  "
+  class="mySwiper custom-swiper" pagination="true" [loop]="true">
+            <swiper-slide *ngFor="let item of ind1">
+              <ion-list class="img1">
+                <img [src]="item.img" alt="" class="ivz">
+    <div class="overlay-text">
+      <p class="p7"><span>{{item.auto}}</span> <br> <span>{{item.col}}</span><br><span>{{item.yer}}</span></p>
+    </div>
+              </ion-list>
+                </swiper-slide>
+  </swiper-container>
+</ion-list>
+<ion-list class="fe">
+  <p class="p8">Feature Products</p>
+  <ion-list (click)="goToFoundResult()">
+    <p class="p9">Show all</p>
+  </ion-list>
+</ion-list>
+<br>
+<br>
+<ion-list class="fe1">
+<swiper-container [breakpoints]="
+{
+  '360':{
+    'slidesPerView': 3,
+    'spaceBetween': 10,
+  },
+  '760':{
+    'slidesPerView':5,
+    'spaceBetween': 10,
+  },
+  '1221':{
+    'slidesPerView': 5,
+    'spaceBetween': 10,
+  }
+}
+"
+[loop]="true"
+ style="margin-left: 20px;">
+      <swiper-slide *ngFor="let item of currentProducts" (click)="next(item)" class="sax" >
+      <ion-list class="pic1">
+        <img [src]="item.img" alt="" class="hx">c
+      </ion-list>
+      <ion-list class="t1"> <span class="pmn">{{item.lin}}</span>
+        <br>
+        <a class="phj">{{item.dol}}</a>
+      </ion-list>
+      </swiper-slide>
+    </swiper-container>
+  </ion-list>
+  <br>
+
+  <swiper-container [breakpoints]="
+  {
+    '360':{
+      'slidesPerView': 1,
+      'spaceBetween': 10,
+    },
+    '760':{
+      'slidesPerView':4,
+      'spaceBetween': 10,
+    },
+    '1221':{
+      'slidesPerView': 4,
+      'spaceBetween': 40,
+    }
+  }
+  "
+  class="mySwiper custom-swiper"  [loop]="true">
+            <swiper-slide *ngFor="let itemx of ind11">
+              <ion-list class="second">
+                <img [src]="itemx.img1" alt="">
+              </ion-list>
+                </swiper-slide>
+  </swiper-container>
+        
+          
+          <ion-list class="fe">
+            <p class="p8">Recommended</p>
+            <ion-list (click)="goToFoundResult()">
+              <p class="p9">Show all</p>
+            </ion-list>
+          </ion-list>
+          <br>
+          <swiper-container [breakpoints]="
+{
+  '360':{
+    'slidesPerView': 1.5,
+    'spaceBetween': 10,
+  },
+  '760':{
+    'slidesPerView':6,
+    'spaceBetween': 10,
+  },
+  '1221':{
+    'slidesPerView': 6,
+    'spaceBetween': 10,
+  }
+}
+"
+[loop]="true"
+ >
+      <swiper-slide *ngFor="let item of currentProducts" (click)="next(item)" >
+        <ion-card class="aczx">
+        <img [src]="item.img" alt="" class="whit">
+    
+      <ion-list class="t2"> <span class="swbx">{{item.lin}}</span>
+        <br>
+        <a class="az">{{item.dol}}</a>
+      </ion-list>
+        </ion-card>
+      </swiper-slide>
+    </swiper-container>
+    <ion-list class="fe">
+      <p class="p8">Top Collection</p>
+      
+      <!-- <ion-list>
+        <p class="p9">Show all</p>
+      </ion-list> -->
+    </ion-list>
+    <br>
+    <br>
+    <swiper-container [breakpoints]="
+    {
+      '360':{
+        'slidesPerView': 1,
+        'spaceBetween': 10,
+      },
+      '760':{
+        'slidesPerView':3,
+        'spaceBetween': 10,
+      },
+      '1221':{
+        'slidesPerView': 3,
+        'spaceBetween': 40,
+      }
+    }
+    "
+    class="mySwiper custom-swiper"  [loop]="true">
+              <swiper-slide *ngFor="let itemx of ind12">
+                <ion-list class="baner">
+                  <img [src]="itemx.img2" alt="">
+                </ion-list>
+                  </swiper-slide>
+    </swiper-container>
+<ion-grid>
+  <ion-row>
+    <ion-col size="6" size-md="3" *ngFor="let items of indb" >
+      <ion-list class="baner2" >
+        <img [src]="items.imgc" alt="" class="baner2">
+      </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+                  
+                   
+     
+    <br>
+    <br>
+    <br>
+    <!-- <ion-foter class="aa">  
+      <ion-tab-bar slot="bottom" class="bottom">
+        <ion-tab-button tab="home">
+       <ion-icon name="home-outline" class="homei"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="radio" (click)="goto()">
+          <ion-icon name="search-outline"></ion-icon>
+        </ion-tab-button>
+       <ion-tab-button tab="radio" (click)="go1()" class="icon-with-badge">
+          <ion-icon name="bag-remove-outline" class="bg"></ion-icon>
+          <ion-badge color="danger" *ngIf="cartItems.length > 0" class="badge">
+            {{ cartItems.length }}
+          </ion-badge>
+        </ion-tab-button>
+        <ion-tab-button tab="search" (click)="go2()">
+          <ion-icon name="person-circle-outline" class="per">
+          </ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+</ion-foter> -->
+
+<app-work></app-work> 
+
+</ion-content>

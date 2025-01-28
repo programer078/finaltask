@@ -1,0 +1,181 @@
+<ion-content [fullscreen]="true">
+ 
+
+
+<div class="ion-page" #page>
+ 
+  <ion-content class="ion-padding">
+    <br>
+    <br>
+    <ion-list class="meani">
+  <ion-list class="icon" (click)="goBack()">
+    <ion-icon name="chevron-back-outline" class="bacx"></ion-icon>
+  </ion-list>
+  </ion-list>
+  <br>
+  <br>
+  <ion-list class="mean">
+    <ion-list class="search">
+      <ion-icon name="search-outline" class="seox"></ion-icon>
+      <ion-input placeholder="search" class="p1x" [(ngModel)]="searchQuery" (ionInput)="filterProducts()">
+      </ion-input>
+    </ion-list>
+    <ion-list class="icon2">
+      <ion-icon name="options-outline" class="opx" id="open-modal" expand="block"></ion-icon>
+    </ion-list>
+  </ion-list>
+ 
+  <br>
+  <br>
+  <br>
+  <ion-list class="fe">
+    <p class="p8">Popular this weak</p>
+    <!-- <p class="p9">Show all</p> -->
+  </ion-list>
+  <br>
+  <!-- <ion-list class="last">
+    <swiper-container [breakpoints]="
+  {
+    '360':{
+      'slidesPerView': 2,
+      'spaceBetween': 10,
+    },
+    '760':{
+      'slidesPerView':4,
+      'spaceBetween': 10,
+    },
+    '1221':{
+      'slidesPerView': 5,
+      'spaceBetween': 10,
+    }
+  }
+  "
+  [loop]="true"
+   style="margin-left: 20px;">
+        <swiper-slide *ngFor="let item of indl" (click)="next(item)" >
+      <ion-list class="p1">
+        <img [src]="item.img" alt="">
+      </ion-list>
+      <ion-list class="t1"> <span class="nax">{{item.lin}}</span>
+        <br>
+        <a class="dolx">{{item.dol}}</a>
+      </ion-list>
+        </swiper-slide>
+      </swiper-container>
+  </ion-list> -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" size-md="2" *ngFor="let item of filteredProducts" (click)="next(item)">
+        <div class="image-container">
+          <img [src]="item.img" alt="product image" class="img">
+        </div>
+        <ion-list class="t1"> 
+          <span class="linx">{{item.lin}}</span>
+          <br>
+          <a class="dolx">{{item.dol}}</a>
+          <br>
+        </ion-list>
+        <br>
+      </ion-col>
+    </ion-row>
+
+      <ion-row *ngIf="filteredProducts.length === 0">
+    <ion-col size="12">
+      <p class="not-found-message">Product not found</p>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+  
+    <ion-modal #modal trigger="open-modal" [canDismiss]="canDismiss" [presentingElement]="page" >
+      <ng-template>
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Modal</ion-title>
+            <p slot="start" class="f1">Filter</p>
+            <ion-buttons slot="end">
+              <!-- <ion-button (click)="modal.dismiss()">Close</ion-button> -->
+              <ion-icon name="options-outline" class="opx"  (click)="modal.dismiss()" ></ion-icon>
+            </ion-buttons>
+          </ion-toolbar>
+         
+        </ion-header>
+        <ion-content class="ion-padding">
+          <div class="price-range">
+            <label for="price">Price Range</label>
+            <div class="slider-container" style="position: relative; width: 250px; margin-bottom: 20px;">
+              <input
+                style="position: absolute; width: 100%;"
+                type="range"
+                id="minPrice"
+                name="minPrice"
+                [min]="minPrice"
+                [max]="maxPrice"
+                [(ngModel)]="selectedMinPrice"
+                (input)="adjustMaxPrice()"
+              />
+              <input
+                style="position: absolute; width: 100%;"
+                type="range"
+                id="maxPrice"
+                name="maxPrice"
+                [min]="selectedMinPrice"
+                [max]="maxPrice"
+                [(ngModel)]="selectedMaxPrice"
+                (input)="adjustMinPrice()"
+              />
+            </div>
+          
+            <!-- Adding CSS class to handle positioning of the price values -->
+            <div class="price-values" style="display: flex; justify-content: space-between;">
+              <span>${{ selectedMinPrice }}</span>
+              <span> - </span>
+              <span>${{ selectedMaxPrice }}</span>
+            </div>
+          </div>
+          
+          <div class="filter-section">
+            <label>Color</label>
+            <br>
+            <div class="color-options">
+                <span class="color" style="background-color: #d87837;"></span>
+                <span class="color" style="background-color: #c54164;"></span>
+                <span class="color" style="background-color: #1b1b1b;"></span>
+                <span class="color" style="background-color: #c0c2d6;"></span>
+                <span class="color" style="background-color: #edeeef;"></span>
+                <span class="color" style="background-color: #7c6664;"></span>
+            </div>
+          </div>
+        
+          <div class="filter-section">
+            <label for="category">Category</label>
+            <br>
+            <select id="category" [(ngModel)]="selectedCategory" style="width: 90%; border: solid 1px black; border-radius: 20px; margin-left: 18px;">
+              <option value="all">All Categories</option>
+              <option value="women">Women</option>
+              <option value="men">Men</option>
+              <option value="accessories">Accessories</option>
+              <option value="beauty">Beauty</option>
+            </select>
+          </div>
+          
+          <!-- <div class="filter-section">
+          <label>Discount</label>
+          <div class="discount-options">
+          <button class="discount">50% off</button>
+          <button class="discount">40% off</button>
+          
+          </div>
+          </div> -->
+         
+          <br>
+          <br>
+          <ion-list class="lastz">
+            <div class="discount-button2"><p class="re">Reset</p></div>
+          <div class="discount-button3" (click)="modal.dismiss()" ><p class="ap"  (click)="applyFilters()">Apply</p></div>
+          </ion-list>
+        </ion-content>
+        
+      </ng-template>
+    </ion-modal>
+  </ion-content>
+</div>

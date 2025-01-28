@@ -1,0 +1,64 @@
+<ion-content [fullscreen]="true">
+ 
+  <ion-list class="mean">
+    <ion-item lines="none" class="it" >
+        <ion-avatar slot="start" class="stax">
+          <img src="../../assets/icon/avatar.png">
+        </ion-avatar>
+        <ion-label>
+          <h2 class="p2">Sunie Pham</h2>
+          <p class="p1">sunieuxgmail.com</p>
+        </ion-label>
+      <ion-icon (click)="goto()" name="settings" class="setx"></ion-icon>
+    </ion-item>
+    </ion-list>
+    <ion-card>
+      <ion-item>
+        <ion-icon name="location" class="i1"></ion-icon> &nbsp;&nbsp; <span class="sp1">Address</span>
+        <ion-icon name="chevron-forward-outline" class="i2" slot="end"></ion-icon>
+      </ion-item>
+      <br>
+      <ion-item (click)="pa()">
+        <ion-icon name="card" class="i1"></ion-icon> &nbsp;&nbsp; <span class="sp1" >Payment method</span>
+        <ion-icon name="chevron-forward-outline" class="i2" slot="end"></ion-icon>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-icon name="layers" class="i1"></ion-icon> &nbsp;&nbsp; <span class="sp1">Voucher</span>
+        <ion-icon name="chevron-forward-outline" class="i2" slot="end"></ion-icon>
+      </ion-item>
+      <br>
+      <ion-item (click)="pa1()">
+        <ion-icon name="heart" class="i1"></ion-icon> &nbsp;&nbsp; <span class="sp1">My Wishlist</span>
+        <ion-icon name="chevron-forward-outline" class="i2" slot="end"></ion-icon>
+      </ion-item>
+      <br>
+      <ion-item (click)="pa2()">
+        <ion-icon name="star" class="i1"></ion-icon> &nbsp;&nbsp; <span class="sp1">Rate this app</span>
+        <ion-icon name="chevron-forward-outline" class="i2" slot="end"></ion-icon>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-icon name="exit" class="i1"></ion-icon> &nbsp;&nbsp; <span class="sp1">Log out</span>
+        <ion-icon name="chevron-forward-outline" class="i2" slot="end"></ion-icon>
+      </ion-item>
+      <br>
+    </ion-card>
+    <ion-footer class="aa">
+      <ion-tab-bar slot="bottom" class="bottom" >
+        <ion-tab-button tab="home" (click)="go()">
+       <ion-icon name="home-outline" class="hox"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="radio" (click)="go1()">
+          <ion-icon name="search-outline" class="ser"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="radio" (click)="go2()">
+          <ion-icon name="bag-remove-outline" class="bgx"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="search" >
+          <ion-icon  name="person-circle-outline" class="cirx">
+          </ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-footer>
+  </ion-content>

@@ -1,0 +1,270 @@
+.arow{
+    height: 30px; width: 30px;
+    float: left;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0,0.329);
+    background-color: white;
+    }
+    .a{
+        height: 120px;
+        width: 110px;
+        float: left;
+      }
+      .b{
+        height: 120px;
+        width: 220px;
+        float: left;
+        margin-top: -2px;
+      }
+      .trx{
+        color: black;margin-left: 10px;
+        font-weight: bolder; float: left;
+        }
+        .counter {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100px;
+          height: 30px;
+          padding: 5px;
+          margin-top: 20px;
+          float: right;
+          border: 1px solid #ccc;
+          border-radius: 50px;
+          background-color: white;
+        }
+        
+        .btn {
+          background: none;
+          border: none;
+          font-size: 20px;
+          padding: 5px;
+          cursor: pointer;
+        }
+        
+        .value {
+          font-size: 18px;
+          padding: 0 10px;
+        }
+        
+        .minus, .plus {
+          font-weight: bold;
+        }
+        
+        
+        .ac{
+          font-size: 10px;
+          color: gray;
+        }
+        .trxz{
+          color: black;margin-left: 10px;
+          font-weight: bolder; float: left;
+          font-size: 18px;
+          }
+        .ch{
+          height: 44px; width: 220px;
+      
+        //   margin-top: 15px;
+        }
+        ion-checkbox {
+          --size: 25px;
+          --checkbox-background-checked: rgba(45, 104, 45, 0.596);
+        }
+        
+        ion-checkbox::part(container) {
+          border-radius: 6px;
+          border: 2px solid rgba(45, 104, 45, 0.596);
+          margin-left: 80px;
+          margin-top: 10px;
+        }
+    .im1{
+        height: 120px; width: 35%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: rgba(255, 192, 203, 0.096);
+        float: left;
+    }
+    .im2{
+        height: 120px; width: 35%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: rgba(255, 192, 203, 0.096);
+        float: left;
+    }
+    .ch{
+    float: right;
+    }
+    .prx{
+    color: gray; float: left;
+    }
+    .siz{
+    font-size: 10px; 
+    color: gray; 
+    margin-left: 10px; 
+    }
+    .bacx{
+    height: 20px; 
+    width: 20px;
+    }
+    .trx{
+    color: black;margin-left: 10px;
+    font-weight: bolder; float: left;
+    }
+    .dola{
+    font-weight: bolder; color: black; 
+    margin-left: 10px; float: left; 
+    font-size: larger;
+    }
+    .your{
+    text-align: center; 
+    margin-top: 25px;
+    }
+    .subt{
+    color: black; 
+    float: left;
+    }
+    .dox{
+    float: right; font-weight: 
+    bolder; font-size: large;
+    }
+    .prox{
+    color: white;
+    font-size: large; 
+    cursor: pointer;
+    }
+    .mapx{
+     border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; 
+    height: 160px; width: 240px;
+    }
+    .pricex{
+    float: right;
+    }
+    .im3{
+        height: 120px; width: 35%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: rgba(255, 192, 203, 0.096);
+        float: left;
+    }
+    .im4{
+        height: 120px; width: 35%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: rgba(255, 192, 203, 0.096);
+        float: left;
+    }
+    .sp{
+        height: 43px; width: 65%;
+        float: left;
+    }
+    ion-checkbox {
+        --size: 25px;
+        --checkbox-background-checked: rgba(45, 104, 45, 0.596);
+      }
+      
+      ion-checkbox::part(container) {
+        border-radius: 6px;
+        border: 2px solid rgba(45, 104, 45, 0.596);
+        margin-right: 10px;
+        margin-top: 10px;
+      }
+      .do{
+        height: 40px; width: 100px;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+      }
+      .su{
+      color: gray; 
+      font-size: 10px;
+      }
+      .si{
+        height: 20px; width: 110px;
+        display: flex;
+        align-items: center;
+        float: left;
+        margin-top: 5px;
+      }
+      .counter-container {
+        display: flex;
+        align-items: center;
+        border: 1px solid gray;
+        border-radius: 20px;
+        width: fit-content;
+        height: 30px;
+        float: right;
+        margin-right: 10px;
+    }
+
+    .counter-button {
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 0 10px;
+        color: gray;
+    }
+    .counter-button1{
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        color: gray;
+        cursor: pointer;
+        width: 25px;
+    }
+    .counter-value {
+        font-size: 15px;
+    }
+    .last{
+        height: 300px; width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.329);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    @media (min-width: 900px) and (min-width: 1600px) {
+        .last{
+         margin-top: 60px;
+      }
+      }
+    .t{
+        height: 50px; width: 90%;
+        margin-inline: auto;
+        align-items: center;
+        
+    }
+    .delete-icon{
+      color: red;
+      margin-top: 20px;
+      float: right;
+    }
+    .prfg{
+      color: gray;
+       float: left;
+      }
+      .pr{
+        float: right;
+      }
+    hr {
+        border: none;
+        height: 1px;
+        background-color: #ccc; /* or any color you prefer */
+        width: 90%;
+      }
+      .pro{
+        height: 60px; width: 90%;
+        margin-inline: auto;
+        border-radius: 30px;
+        background-color: rgba(0, 0, 0, 0.712);
+        color: white;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+      
